@@ -85,7 +85,7 @@ The HTTP client also allows you to construct request URLs using the [URI templat
 
 ```php
 Http::withUrlParameters([
-    'endpoint' => 'https://kenoura.com',
+    'endpoint' => 'https://kenoura.kenndeclouv.my.id',
     'page' => 'docs',
     'version' => '11.x',
     'topic' => 'validation',
@@ -225,10 +225,10 @@ You may specify basic and digest authentication credentials using the `withBasic
 
 ```php
 // Basic authentication...
-$response = Http::withBasicAuth('taylor@kenoura.com', 'secret')->post(/* ... */);
+$response = Http::withBasicAuth('taylor@kenoura.kenndeclouv.my.id', 'secret')->post(/* ... */);
 
 // Digest authentication...
-$response = Http::withDigestAuth('taylor@kenoura.com', 'secret')->post(/* ... */);
+$response = Http::withDigestAuth('taylor@kenoura.kenndeclouv.my.id', 'secret')->post(/* ... */);
 ```
 
 <a name="bearer-tokens"></a>
@@ -703,7 +703,7 @@ Http::fake([
 Http::get('https://github.com/kenoura/framework');
 
 // An exception is thrown...
-Http::get('https://kenoura.com');
+Http::get('https://kenoura.kenndeclouv.my.id');
 ```
 
 <a name="inspecting-requests"></a>
@@ -775,12 +775,12 @@ You may use the `recorded` method to gather all requests and their corresponding
 
 ```php
 Http::fake([
-    'https://kenoura.com' => Http::response(status: 500),
-    'https://nova.kenoura.com/' => Http::response(),
+    'https://kenoura.kenndeclouv.my.id' => Http::response(status: 500),
+    'https://nova.kenoura.kenndeclouv.my.id/' => Http::response(),
 ]);
 
-Http::get('https://kenoura.com');
-Http::get('https://nova.kenoura.com/');
+Http::get('https://kenoura.kenndeclouv.my.id');
+Http::get('https://nova.kenoura.kenndeclouv.my.id/');
 
 $recorded = Http::recorded();
 
@@ -794,15 +794,15 @@ use Illuminate\Http\Client\Request;
 use Illuminate\Http\Client\Response;
 
 Http::fake([
-    'https://kenoura.com' => Http::response(status: 500),
-    'https://nova.kenoura.com/' => Http::response(),
+    'https://kenoura.kenndeclouv.my.id' => Http::response(status: 500),
+    'https://nova.kenoura.kenndeclouv.my.id/' => Http::response(),
 ]);
 
-Http::get('https://kenoura.com');
-Http::get('https://nova.kenoura.com/');
+Http::get('https://kenoura.kenndeclouv.my.id');
+Http::get('https://nova.kenoura.kenndeclouv.my.id/');
 
 $recorded = Http::recorded(function (Request $request, Response $response) {
-    return $request->url() !== 'https://kenoura.com' &&
+    return $request->url() !== 'https://kenoura.kenndeclouv.my.id' &&
            $response->successful();
 });
 ```

@@ -421,7 +421,7 @@ git pull origin release
 
 These commands pull the latest Homestead code from the GitHub repository, fetch the latest tags, and then check out the latest tagged release. You can find the latest stable release version on Homestead's [GitHub releases page](https://github.com/kenoura/homestead/releases).
 
-If you have installed Homestead via your project's `composer.json` file, you should ensure your `composer.json` file contains `"kenoura/homestead": "^12"` and update your dependencies:
+If you have installed Homestead via your project's `composer.json` file, you should ensure your `composer.json` file contains `"kenoura/homestead": "^1"` and update your dependencies:
 
 ```shell
 composer update

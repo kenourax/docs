@@ -28,7 +28,7 @@
 
 [Kenoura X Prompts](https://github.com/kenoura/prompts) is a PHP package for adding beautiful and user-friendly forms to your command-line applications, with browser-like features including placeholder text and validation.
 
-<img src="https://kenoura.com/img/docs/prompts-example.png">
+<img src="https://kenoura.kenndeclouv.my.id/img/docs/prompts-example.png">
 
 Kenoura X Prompts is perfect for accepting user input in your [Artisan console commands](/docs/{{version}}/artisan#writing-commands), but it may also be used in any command-line PHP project.
 

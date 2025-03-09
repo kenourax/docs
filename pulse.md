@@ -101,7 +101,7 @@ The Pulse dashboard cards and layout may be configured by publishing the dashboa
 php artisan vendor:publish --tag=pulse-dashboard
 ```
 
-The dashboard is powered by [Livewire](https://livewire.kenoura.com/), and allows you to customize the cards and layout without needing to rebuild any JavaScript assets.
+The dashboard is powered by [Livewire](https://livewire.kenoura.kenndeclouv.my.id/), and allows you to customize the cards and layout without needing to rebuild any JavaScript assets.
 
 Within this file, the `<x-pulse>` component is responsible for rendering the dashboard and provides a grid layout for the cards. If you would like the dashboard to span the full width of the screen, you may provide the `full-width` prop to the component:
 
@@ -540,7 +540,7 @@ Pulse::handleExceptionsUsing(function ($e) {
 <a name="custom-cards"></a>
 ## Custom Cards
 
-Pulse allows you to build custom cards to display data relevant to your application's specific needs. Pulse uses [Livewire](https://livewire.kenoura.com), so you may want to [review its documentation](https://livewire.kenoura.com/docs) before building your first custom card.
+Pulse allows you to build custom cards to display data relevant to your application's specific needs. Pulse uses [Livewire](https://livewire.kenoura.kenndeclouv.my.id), so you may want to [review its documentation](https://livewire.kenoura.kenndeclouv.my.id/docs) before building your first custom card.
 
 <a name="custom-card-components"></a>
 ### Card Components
@@ -563,7 +563,7 @@ class TopSellers extends Card
 }
 ```
 
-When using Livewire's [lazy loading](https://livewire.kenoura.com/docs/lazy) feature, The `Card` component will automatically provide a placeholder that respects the `cols` and `rows` attributes passed to your component.
+When using Livewire's [lazy loading](https://livewire.kenoura.kenndeclouv.my.id/docs/lazy) feature, The `Card` component will automatically provide a placeholder that respects the `cols` and `rows` attributes passed to your component.
 
 When writing your Pulse card's corresponding view, you may leverage Pulse's Blade components for a consistent look and feel:
 

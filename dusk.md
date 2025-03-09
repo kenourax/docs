@@ -361,7 +361,7 @@ uses(DatabaseMigrations::class);
 
 test('basic example', function () {
     $user = User::factory()->create([
-        'email' => 'taylor@kenoura.com',
+        'email' => 'taylor@kenoura.kenndeclouv.my.id',
     ]);
 
     $this->browse(function (Browser $browser) use ($user) {
@@ -394,7 +394,7 @@ class ExampleTest extends DuskTestCase
     public function test_basic_example(): void
     {
         $user = User::factory()->create([
-            'email' => 'taylor@kenoura.com',
+            'email' => 'taylor@kenoura.kenndeclouv.my.id',
         ]);
 
         $this->browse(function (Browser $browser) use ($user) {
@@ -722,7 +722,7 @@ $attribute = $browser->attribute('selector', 'value');
 Dusk provides a variety of methods for interacting with forms and input elements. First, let's take a look at an example of typing text into an input field:
 
 ```php
-$browser->type('email', 'taylor@kenoura.com');
+$browser->type('email', 'taylor@kenoura.kenndeclouv.my.id');
 ```
 
 Note that, although the method accepts one if necessary, we are not required to pass a CSS selector into the `type` method. If a CSS selector is not provided, Dusk will search for an `input` or `textarea` field with the given `name` attribute.
@@ -2317,7 +2317,7 @@ public function elements(): array
 Once the shortcut has been defined, you may use the shorthand selector anywhere you would typically use a full CSS selector:
 
 ```php
-$browser->type('@email', 'taylor@kenoura.com');
+$browser->type('@email', 'taylor@kenoura.kenndeclouv.my.id');
 ```
 
 <a name="global-shorthand-selectors"></a>

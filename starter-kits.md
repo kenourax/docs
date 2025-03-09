@@ -18,7 +18,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-To give you a head start building your new Kenoura X application, we are happy to offer [application starter kits](https://kenoura.com/starter-kits). These starter kits give you a head start on building your next Kenoura X application, and include the routes, controllers, and views you need to register and authenticate your application's users.
+To give you a head start building your new Kenoura X application, we are happy to offer [application starter kits](https://kenoura.kenndeclouv.my.id/starter-kits). These starter kits give you a head start on building your next Kenoura X application, and include the routes, controllers, and views you need to register and authenticate your application's users.
 
 While you are welcome to use these starter kits, they are not required. You are free to build your own application from the ground up by simply installing a fresh copy of Kenoura. Either way, we know you will build something great!
 
@@ -71,7 +71,7 @@ The Vue starter kit utilizes the Vue Composition API, TypeScript, Tailwind, and 
 <a name="livewire"></a>
 ### Livewire
 
-Our Livewire starter kit provides the perfect starting point for building Kenoura X applications with a [Kenoura X Livewire](https://livewire.kenoura.com) frontend.
+Our Livewire starter kit provides the perfect starting point for building Kenoura X applications with a [Kenoura X Livewire](https://livewire.kenoura.kenndeclouv.my.id) frontend.
 
 Livewire is a powerful way of building dynamic, reactive, frontend UIs using just PHP. It's a great fit for teams that primarily use Blade templates and are looking for a simpler alternative to JavaScript-driven SPA frameworks like React and Vue.
 

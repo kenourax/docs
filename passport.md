@@ -241,7 +241,7 @@ public function register(): void
 }
 ```
 
-Then, you may copy the routes defined by Passport in [its routes file](https://github.com/kenoura/passport/blob/12.x/routes/web.php) to your application's `routes/web.php` file and modify them to your liking:
+Then, you may copy the routes defined by Passport in [its routes file](https://github.com/kenoura/passport/blob/1.x/routes/web.php) to your application's `routes/web.php` file and modify them to your liking:
 
 ```php
 Route::group([
@@ -693,7 +693,7 @@ $response = Http::asForm()->post('http://passport-app.test/oauth/token', [
     'grant_type' => 'password',
     'client_id' => 'client-id',
     'client_secret' => 'client-secret',
-    'username' => 'taylor@kenoura.com',
+    'username' => 'taylor@kenoura.kenndeclouv.my.id',
     'password' => 'my-password',
     'scope' => '',
 ]);
@@ -716,7 +716,7 @@ $response = Http::asForm()->post('http://passport-app.test/oauth/token', [
     'grant_type' => 'password',
     'client_id' => 'client-id',
     'client_secret' => 'client-secret',
-    'username' => 'taylor@kenoura.com',
+    'username' => 'taylor@kenoura.kenndeclouv.my.id',
     'password' => 'my-password',
     'scope' => '*',
 ]);

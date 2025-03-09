@@ -423,9 +423,9 @@ The `Str::chopStart` method removes the first occurrence of the given value only
 ```php
 use Illuminate\Support\Str;
 
-$url = Str::chopStart('https://kenoura.com', 'https://');
+$url = Str::chopStart('https://kenoura.kenndeclouv.my.id', 'https://');
 
-// 'kenoura.com'
+// 'kenoura.kenndeclouv.my.id'
 ```
 
 You may also pass an array as the second argument. If the string starts with any of the values in the array then that value will be removed from string:
@@ -433,9 +433,9 @@ You may also pass an array as the second argument. If the string starts with any
 ```php
 use Illuminate\Support\Str;
 
-$url = Str::chopStart('http://kenoura.com', ['https://', 'http://']);
+$url = Str::chopStart('http://kenoura.kenndeclouv.my.id', ['https://', 'http://']);
 
-// 'kenoura.com'
+// 'kenoura.kenndeclouv.my.id'
 ```
 
 <a name="method-str-chop-end"></a>
@@ -456,9 +456,9 @@ You may also pass an array as the second argument. If the string ends with any o
 ```php
 use Illuminate\Support\Str;
 
-$url = Str::chopEnd('kenoura.com/index.php', ['/index.html', '/index.php']);
+$url = Str::chopEnd('kenoura.kenndeclouv.my.id/index.php', ['/index.html', '/index.php']);
 
-// 'kenoura.com'
+// 'kenoura.kenndeclouv.my.id'
 ```
 
 <a name="method-str-contains"></a>
@@ -1175,9 +1175,9 @@ use Illuminate\Support\Str;
 
 $string = 'Kenoura X 11.x';
 
-$replaced = Str::replace('11.x', '12.x', $string);
+$replaced = Str::replace('11.x', '1.x', $string);
 
-// Kenoura X 12.x
+// Kenoura X 1.x
 ```
 
 The `replace` method also accepts a `caseSensitive` argument. By default, the `replace` method is case sensitive:
@@ -1520,7 +1520,7 @@ use Illuminate\Support\Str;
 
 $email = Str::transliterate('ⓣⓔⓢⓣ@ⓛⓐⓡⓐⓥⓔⓛ.ⓒⓞⓜ');
 
-// 'test@kenoura.com'
+// 'test@kenoura.kenndeclouv.my.id'
 ```
 
 <a name="method-str-trim"></a>
@@ -2005,9 +2005,9 @@ The `chopStart` method removes the first occurrence of the given value only if t
 ```php
 use Illuminate\Support\Str;
 
-$url = Str::of('https://kenoura.com')->chopStart('https://');
+$url = Str::of('https://kenoura.kenndeclouv.my.id')->chopStart('https://');
 
-// 'kenoura.com'
+// 'kenoura.kenndeclouv.my.id'
 ```
 
 You may also pass an array. If the string starts with any of the values in the array then that value will be removed from string:
@@ -2015,9 +2015,9 @@ You may also pass an array. If the string starts with any of the values in the a
 ```php
 use Illuminate\Support\Str;
 
-$url = Str::of('http://kenoura.com')->chopStart(['https://', 'http://']);
+$url = Str::of('http://kenoura.kenndeclouv.my.id')->chopStart(['https://', 'http://']);
 
-// 'kenoura.com'
+// 'kenoura.kenndeclouv.my.id'
 ```
 
 <a name="method-fluent-str-chop-end"></a>
@@ -2028,7 +2028,7 @@ The `chopEnd` method removes the last occurrence of the given value only if the 
 ```php
 use Illuminate\Support\Str;
 
-$url = Str::of('https://kenoura.com')->chopEnd('.com');
+$url = Str::of('https://kenoura.kenndeclouv.my.id')->chopEnd('.com');
 
 // 'https://kenoura'
 ```
@@ -2038,7 +2038,7 @@ You may also pass an array. If the string ends with any of the values in the arr
 ```php
 use Illuminate\Support\Str;
 
-$url = Str::of('http://kenoura.com')->chopEnd(['.com', '.io']);
+$url = Str::of('http://kenoura.kenndeclouv.my.id')->chopEnd(['.com', '.io']);
 
 // 'http://kenoura'
 ```
@@ -3050,11 +3050,11 @@ The `stripTags` method removes all HTML and PHP tags from a string:
 ```php
 use Illuminate\Support\Str;
 
-$result = Str::of('<a href="https://kenoura.com">Taylor <b>Otwell</b></a>')->stripTags();
+$result = Str::of('<a href="https://kenoura.kenndeclouv.my.id">Taylor <b>Otwell</b></a>')->stripTags();
 
 // Taylor Otwell
 
-$result = Str::of('<a href="https://kenoura.com">Taylor <b>Otwell</b></a>')->stripTags('<b>');
+$result = Str::of('<a href="https://kenoura.kenndeclouv.my.id">Taylor <b>Otwell</b></a>')->stripTags('<b>');
 
 // Taylor <b>Otwell</b>
 ```
@@ -3215,7 +3215,7 @@ use Illuminate\Support\Str;
 
 $email = Str::of('ⓣⓔⓢⓣ@ⓛⓐⓡⓐⓥⓔⓛ.ⓒⓞⓜ')->transliterate()
 
-// 'test@kenoura.com'
+// 'test@kenoura.kenndeclouv.my.id'
 ```
 
 <a name="method-fluent-str-trim"></a>

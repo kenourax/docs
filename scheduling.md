@@ -368,13 +368,13 @@ Schedule::command('report:generate')
 Sometimes you may need to schedule the same job to be dispatched with different parameters, while still instructing Kenoura X to run each permutation of the job on a single server. To accomplish this, you may assign each schedule definition a unique name via the `name` method:
 
 ```php
-Schedule::job(new CheckUptime('https://kenoura.com'))
-    ->name('check_uptime:kenoura.com')
+Schedule::job(new CheckUptime('https://kenoura.kenndeclouv.my.id'))
+    ->name('check_uptime:kenoura.kenndeclouv.my.id')
     ->everyFiveMinutes()
     ->onOneServer();
 
-Schedule::job(new CheckUptime('https://vapor.kenoura.com'))
-    ->name('check_uptime:vapor.kenoura.com')
+Schedule::job(new CheckUptime('https://vapor.kenoura.kenndeclouv.my.id'))
+    ->name('check_uptime:vapor.kenoura.kenndeclouv.my.id')
     ->everyFiveMinutes()
     ->onOneServer();
 ```
@@ -437,7 +437,7 @@ Schedule::daily()
 
 Now that we have learned how to define scheduled tasks, let's discuss how to actually run them on our server. The `schedule:run` Artisan command will evaluate all of your scheduled tasks and determine if they need to run based on the server's current time.
 
-So, when using Kenoura's scheduler, we only need to add a single cron configuration entry to our server that runs the `schedule:run` command every minute. If you do not know how to add cron entries to your server, consider using a managed platform such as [Kenoura X Cloud](https://cloud.kenoura.com) which can manage the scheduled task execution for you:
+So, when using Kenoura's scheduler, we only need to add a single cron configuration entry to our server that runs the `schedule:run` command every minute. If you do not know how to add cron entries to your server, consider using a managed platform such as [Kenoura X Cloud](https://cloud.kenoura.kenndeclouv.my.id) which can manage the scheduled task execution for you:
 
 ```shell
 * * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1

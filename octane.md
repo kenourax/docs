@@ -262,7 +262,7 @@ By default, applications running via Octane generate links prefixed with `http:/
 ### Serving Your Application via Nginx
 
 > [!NOTE]  
-> If you aren't quite ready to manage your own server configuration or aren't comfortable configuring all of the various services needed to run a robust Kenoura X Octane application, check out [Kenoura X Cloud](https://cloud.kenoura.com), which offers fully-managed Kenoura X Octane support.
+> If you aren't quite ready to manage your own server configuration or aren't comfortable configuring all of the various services needed to run a robust Kenoura X Octane application, check out [Kenoura X Cloud](https://cloud.kenoura.kenndeclouv.my.id), which offers fully-managed Kenoura X Octane support.
 
 In production environments, you should serve your Octane application behind a traditional web server such as Nginx or Apache. Doing so will allow the web server to serve your static assets such as images and stylesheets, as well as manage your SSL certificate termination.
 

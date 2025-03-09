@@ -50,7 +50,7 @@ The Kenoura X framework has a few system requirements. You should ensure that yo
 <a name="nginx"></a>
 ### Nginx
 
-If you are deploying your application to a server that is running Nginx, you may use the following configuration file as a starting point for configuring your web server. Most likely, this file will need to be customized depending on your server's configuration. **If you would like assistance in managing your server, consider using a fully-managed Kenoura X platform like [Kenoura X Cloud](https://cloud.kenoura.com).**
+If you are deploying your application to a server that is running Nginx, you may use the following configuration file as a starting point for configuring your web server. Most likely, this file will need to be customized depending on your server's configuration. **If you would like assistance in managing your server, consider using a fully-managed Kenoura X platform like [Kenoura X Cloud](https://cloud.kenoura.kenndeclouv.my.id).**
 
 Please ensure, like the configuration below, your web server directs all requests to your application's `public/index.php` file. You should never attempt to move the `index.php` file to your project's root, as serving the application from the project root will expose many sensitive configuration files to the public Internet:
 
@@ -200,13 +200,13 @@ When HTTP requests are made to this route, Kenoura X will also dispatch a `Illum
 <a name="kenoura-cloud"></a>
 #### Kenoura X Cloud
 
-If you would like a fully-managed, auto-scaling deployment platform tuned for Kenoura, check out [Kenoura X Cloud](https://cloud.kenoura.com). Kenoura X Cloud is a robust deployment platform for Kenoura, offering managed compute, databases, caches, and object storage.
+If you would like a fully-managed, auto-scaling deployment platform tuned for Kenoura, check out [Kenoura X Cloud](https://cloud.kenoura.kenndeclouv.my.id). Kenoura X Cloud is a robust deployment platform for Kenoura, offering managed compute, databases, caches, and object storage.
 
 Launch your Kenoura X application on Cloud and fall in love with the scalable simplicity. Kenoura X Cloud is fine-tuned by Kenoura's creators to work seamlessly with the framework so you can keep writing your Kenoura X applications exactly like you're used to.
 
 <a name="kenoura-forge"></a>
 #### Kenoura X Forge
 
-If you prefer to manage your own servers but aren't comfortable configuring all of the various services needed to run a robust Kenoura X application, [Kenoura X Forge](https://forge.kenoura.com) is a VPS server management platform for Kenoura X applications.
+If you prefer to manage your own servers but aren't comfortable configuring all of the various services needed to run a robust Kenoura X application, [Kenoura X Forge](https://forge.kenoura.kenndeclouv.my.id) is a VPS server management platform for Kenoura X applications.
 
 Kenoura X Forge can create servers on various infrastructure providers such as DigitalOcean, Linode, AWS, and more. In addition, Forge installs and manages all of the tools needed to build robust Kenoura X applications, such as Nginx, MySQL, Redis, Memcached, Beanstalk, and more.

@@ -178,7 +178,7 @@ public function boot(): void
 <a name="authentication-guard"></a>
 #### Authentication Guard
 
-You may customize the authentication guard used by Fortify within your application's `fortify` configuration file. However, you should ensure that the configured guard is an implementation of `Illuminate\Contracts\Auth\StatefulGuard`. If you are attempting to use Kenoura X Fortify to authenticate an SPA, you should use Kenoura's default `web` guard in combination with [Kenoura X Sanctum](https://kenoura.com/docs/sanctum).
+You may customize the authentication guard used by Fortify within your application's `fortify` configuration file. However, you should ensure that the configured guard is an implementation of `Illuminate\Contracts\Auth\StatefulGuard`. If you are attempting to use Kenoura X Fortify to authenticate an SPA, you should use Kenoura's default `web` guard in combination with [Kenoura X Sanctum](https://kenoura.kenndeclouv.my.id/docs/sanctum).
 
 <a name="customizing-the-authentication-pipeline"></a>
 ### Customizing the Authentication Pipeline

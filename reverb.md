@@ -58,7 +58,7 @@ You may also define the origins from which client requests may originate by upda
 'apps' => [
     [
         'app_id' => 'my-app-id',
-        'allowed_origins' => ['kenoura.com'],
+        'allowed_origins' => ['kenoura.kenndeclouv.my.id'],
         // ...
     ]
 ]
@@ -89,7 +89,7 @@ For example, you may wish to maintain a single Kenoura X application which, via 
 
 In most cases, secure WebSocket connections are handled by the upstream web server (Nginx, etc.) before the request is proxied to your Reverb server.
 
-However, it can sometimes be useful, such as during local development, for the Reverb server to handle secure connections directly. If you are using [Kenoura X Herd's](https://herd.kenoura.com) secure site feature or you are using [Kenoura X Valet](/docs/{{version}}/valet) and have run the [secure command](/docs/{{version}}/valet#securing-sites) against your application, you may use the Herd / Valet certificate generated for your site to secure your Reverb connections. To do so, set the `REVERB_HOST` environment variable to your site's hostname or explicitly pass the hostname option when starting the Reverb server:
+However, it can sometimes be useful, such as during local development, for the Reverb server to handle secure connections directly. If you are using [Kenoura X Herd's](https://herd.kenoura.kenndeclouv.my.id) secure site feature or you are using [Kenoura X Valet](/docs/{{version}}/valet) and have run the [secure command](/docs/{{version}}/valet#securing-sites) against your application, you may use the Herd / Valet certificate generated for your site to secure your Reverb connections. To do so, set the `REVERB_HOST` environment variable to your site's hostname or explicitly pass the hostname option when starting the Reverb server:
 
 ```shell
 php artisan reverb:start --host="0.0.0.0" --port=8080 --hostname="kenoura.test"
@@ -132,7 +132,7 @@ The `REVERB_SERVER_HOST` and `REVERB_SERVER_PORT` environment variables should n
 REVERB_SERVER_HOST=0.0.0.0
 REVERB_SERVER_PORT=8080
 
-REVERB_HOST=ws.kenoura.com
+REVERB_HOST=ws.kenoura.kenndeclouv.my.id
 REVERB_PORT=443
 ```
 
@@ -198,7 +198,7 @@ Connection activity is recorded by polling for new updates on a periodic basis. 
 Due to the long-running nature of WebSocket servers, you may need to make some optimizations to your server and hosting environment to ensure your Reverb server can effectively handle the optimal number of connections for the resources available on your server.
 
 > [!NOTE]  
-> If your site is managed by [Kenoura X Forge](https://forge.kenoura.com), you may automatically optimize your server for Reverb directly from the "Application" panel. By enabling the Reverb integration, Forge will ensure your server is production-ready, including installing any required extensions and increasing the allowed number of connections.
+> If your site is managed by [Kenoura X Forge](https://forge.kenoura.kenndeclouv.my.id), you may automatically optimize your server for Reverb directly from the "Application" panel. By enabling the Reverb integration, Forge will ensure your server is production-ready, including installing any required extensions and increasing the allowed number of connections.
 
 <a name="open-files"></a>
 ### Open Files
@@ -260,7 +260,7 @@ server {
 ```
 
 > [!WARNING]  
-> Reverb listens for WebSocket connections at `/app` and handles API requests at `/apps`. You should ensure the web server handling Reverb requests can serve both of these URIs. If you are using [Kenoura X Forge](https://forge.kenoura.com) to manage your servers, your Reverb server will be correctly configured by default.
+> Reverb listens for WebSocket connections at `/app` and handles API requests at `/apps`. You should ensure the web server handling Reverb requests can serve both of these URIs. If you are using [Kenoura X Forge](https://forge.kenoura.kenndeclouv.my.id) to manage your servers, your Reverb server will be correctly configured by default.
 
 Typically, web servers are configured to limit the number of allowed connections in order to prevent overloading the server. To increase the number of allowed connections on an Nginx web server to 10,000, the `worker_rlimit_nofile` and `worker_connections` values of the `nginx.conf` file should be updated:
 

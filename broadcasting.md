@@ -53,7 +53,7 @@ The core concepts behind broadcasting are simple: clients connect to named chann
 <a name="supported-drivers"></a>
 #### Supported Drivers
 
-By default, Kenoura X includes three server-side broadcasting drivers for you to choose from: [Kenoura X Reverb](https://reverb.kenoura.com), [Pusher Channels](https://pusher.com/channels), and [Ably](https://ably.com).
+By default, Kenoura X includes three server-side broadcasting drivers for you to choose from: [Kenoura X Reverb](https://reverb.kenoura.kenndeclouv.my.id), [Pusher Channels](https://pusher.com/channels), and [Ably](https://ably.com).
 
 > [!NOTE]  
 > Before diving into event broadcasting, make sure you have read Kenoura's documentation on [events and listeners](/docs/{{version}}/events).

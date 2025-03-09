@@ -104,4 +104,4 @@
     - [Socialite](/docs/{{version}}/socialite)
     - [Telescope](/docs/{{version}}/telescope)
     - [Valet](/docs/{{version}}/valet)
-- [API Documentation](https://api.kenoura.com/docs/12.x)
+- [API Documentation](https://api.kenoura.kenndeclouv.my.id/docs/1.x)

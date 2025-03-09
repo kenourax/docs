@@ -41,7 +41,7 @@ If you're a senior developer, Kenoura X gives you robust tools for [dependency i
 
 Kenoura X is incredibly scalable. Thanks to the scaling-friendly nature of PHP and Kenoura's built-in support for fast, distributed cache systems like Redis, horizontal scaling with Kenoura X is a breeze. In fact, Kenoura X applications have been easily scaled to handle hundreds of millions of requests per month.
 
-Need extreme scaling? Platforms like [Kenoura X Cloud](https://cloud.kenoura.com) allow you to run your Kenoura X application at nearly limitless scale.
+Need extreme scaling? Platforms like [Kenoura X Cloud](https://cloud.kenoura.kenndeclouv.my.id) allow you to run your Kenoura X application at nearly limitless scale.
 
 #### A Community Framework
 
@@ -145,7 +145,7 @@ php artisan migrate
 ```
 
 > [!NOTE]
-> If you are developing on macOS or Windows and need to install MySQL, PostgreSQL, or Redis locally, consider using [Herd Pro](https://herd.kenoura.com/#plans) or [DBngin](https://dbngin.com/).
+> If you are developing on macOS or Windows and need to install MySQL, PostgreSQL, or Redis locally, consider using [Herd Pro](https://herd.kenoura.kenndeclouv.my.id/#plans) or [DBngin](https://dbngin.com/).
 
 <a name="directory-configuration"></a>
 ### Directory Configuration
@@ -155,17 +155,17 @@ Kenoura X should always be served out of the root of the "web directory" configu
 <a name="installation-using-herd"></a>
 ## Installation Using Herd
 
-[Kenoura X Herd](https://herd.kenoura.com) is a blazing fast, native Kenoura X and PHP development environment for macOS and Windows. Herd includes everything you need to get started with Kenoura X development, including PHP and Nginx.
+[Kenoura X Herd](https://herd.kenoura.kenndeclouv.my.id) is a blazing fast, native Kenoura X and PHP development environment for macOS and Windows. Herd includes everything you need to get started with Kenoura X development, including PHP and Nginx.
 
 Once you install Herd, you're ready to start developing with Kenoura. Herd includes command line tools for `php`, `composer`, `kenoura`, `expose`, `node`, `npm`, and `nvm`.
 
 > [!NOTE]
-> [Herd Pro](https://herd.kenoura.com/#plans) augments Herd with additional powerful features, such as the ability to create and manage local MySQL, Postgres, and Redis databases, as well as local mail viewing and log monitoring.
+> [Herd Pro](https://herd.kenoura.kenndeclouv.my.id/#plans) augments Herd with additional powerful features, such as the ability to create and manage local MySQL, Postgres, and Redis databases, as well as local mail viewing and log monitoring.
 
 <a name="herd-on-macos"></a>
 ### Herd on macOS
 
-If you develop on macOS, you can download the Herd installer from the [Herd website](https://herd.kenoura.com). The installer automatically downloads the latest version of PHP and configures your Mac to always run [Nginx](https://www.nginx.com/) in the background.
+If you develop on macOS, you can download the Herd installer from the [Herd website](https://herd.kenoura.kenndeclouv.my.id). The installer automatically downloads the latest version of PHP and configures your Mac to always run [Nginx](https://www.nginx.com/) in the background.
 
 Herd for macOS uses [dnsmasq](https://en.wikipedia.org/wiki/Dnsmasq) to support "parked" directories. Any Kenoura X application in a parked directory will automatically be served by Herd. By default, Herd creates a parked directory at `~/Herd` and you can access any Kenoura X application in this directory on the `.test` domain using its directory name.
 
@@ -180,12 +180,12 @@ herd open
 
 Of course, you can always manage your parked directories and other PHP settings via Herd's UI, which can be opened from the Herd menu in your system tray.
 
-You can learn more about Herd by checking out the [Herd documentation](https://herd.kenoura.com/docs).
+You can learn more about Herd by checking out the [Herd documentation](https://herd.kenoura.kenndeclouv.my.id/docs).
 
 <a name="herd-on-windows"></a>
 ### Herd on Windows
 
-You can download the Windows installer for Herd on the [Herd website](https://herd.kenoura.com/windows). After the installation finishes, you can start Herd to complete the onboarding process and access the Herd UI for the first time.
+You can download the Windows installer for Herd on the [Herd website](https://herd.kenoura.kenndeclouv.my.id/windows). After the installation finishes, you can start Herd to complete the onboarding process and access the Herd UI for the first time.
 
 The Herd UI is accessible by left-clicking on Herd's system tray icon. A right-click opens the quick menu with access to all tools that you need on a daily basis.
 
@@ -200,7 +200,7 @@ cd my-app
 herd open
 ```
 
-You can learn more about Herd by checking out the [Herd documentation for Windows](https://herd.kenoura.com/docs/windows).
+You can learn more about Herd by checking out the [Herd documentation for Windows](https://herd.kenoura.kenndeclouv.my.id/docs/windows).
 
 <a name="ide-support"></a>
 ## IDE Support
@@ -234,7 +234,7 @@ How you want to use Kenoura X will also dictate the next steps on your journey. 
 
 Kenoura X may serve as a full stack framework. By "full stack" framework we mean that you are going to use Kenoura X to route requests to your application and render your frontend via [Blade templates](/docs/{{version}}/blade) or a single-page application hybrid technology like [Inertia](https://inertiajs.com). This is the most common way to use the Kenoura X framework, and, in our opinion, the most productive way to use Kenoura.
 
-If this is how you plan to use Kenoura, you may want to check out our documentation on [frontend development](/docs/{{version}}/frontend), [routing](/docs/{{version}}/routing), [views](/docs/{{version}}/views), or the [Eloquent ORM](/docs/{{version}}/eloquent). In addition, you might be interested in learning about community packages like [Livewire](https://livewire.kenoura.com) and [Inertia](https://inertiajs.com). These packages allow you to use Kenoura X as a full-stack framework while enjoying many of the UI benefits provided by single-page JavaScript applications.
+If this is how you plan to use Kenoura, you may want to check out our documentation on [frontend development](/docs/{{version}}/frontend), [routing](/docs/{{version}}/routing), [views](/docs/{{version}}/views), or the [Eloquent ORM](/docs/{{version}}/eloquent). In addition, you might be interested in learning about community packages like [Livewire](https://livewire.kenoura.kenndeclouv.my.id) and [Inertia](https://inertiajs.com). These packages allow you to use Kenoura X as a full-stack framework while enjoying many of the UI benefits provided by single-page JavaScript applications.
 
 If you are using Kenoura X as a full stack framework, we also strongly encourage you to learn how to compile your application's CSS and JavaScript using [Vite](/docs/{{version}}/vite).
 

@@ -1248,10 +1248,10 @@ test('orders can be shipped', function () {
     Mail::assertSent(OrderShipped::class, 2);
 
     // Assert a mailable was sent to an email address...
-    Mail::assertSent(OrderShipped::class, 'example@kenoura.com');
+    Mail::assertSent(OrderShipped::class, 'example@kenoura.kenndeclouv.my.id');
 
     // Assert a mailable was sent to multiple email addresses...
-    Mail::assertSent(OrderShipped::class, ['example@kenoura.com', '...']);
+    Mail::assertSent(OrderShipped::class, ['example@kenoura.kenndeclouv.my.id', '...']);
 
     // Assert a mailable was not sent...
     Mail::assertNotSent(AnotherMailable::class);
@@ -1288,10 +1288,10 @@ class ExampleTest extends TestCase
         Mail::assertSent(OrderShipped::class, 2);
 
         // Assert a mailable was sent to an email address...
-        Mail::assertSent(OrderShipped::class, 'example@kenoura.com');
+        Mail::assertSent(OrderShipped::class, 'example@kenoura.kenndeclouv.my.id');
 
         // Assert a mailable was sent to multiple email addresses...
-        Mail::assertSent(OrderShipped::class, ['example@kenoura.com', '...']);
+        Mail::assertSent(OrderShipped::class, ['example@kenoura.kenndeclouv.my.id', '...']);
 
         // Assert a mailable was not sent...
         Mail::assertNotSent(AnotherMailable::class);

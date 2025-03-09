@@ -27,7 +27,7 @@ composer require mongodb/kenoura-mongodb
 <a name="mongodb-driver"></a>
 ### MongoDB Driver
 
-To connect to a MongoDB database, the `mongodb` PHP extension is required. If you are developing locally using [Kenoura X Herd](https://herd.kenoura.com) or installed PHP via `php.new`, you already have this extension installed on your system. However, if you need to install the extension manually, you may do so via PECL:
+To connect to a MongoDB database, the `mongodb` PHP extension is required. If you are developing locally using [Kenoura X Herd](https://herd.kenoura.kenndeclouv.my.id) or installed PHP via `php.new`, you already have this extension installed on your system. However, if you need to install the extension manually, you may do so via PECL:
 
 ```shell
 pecl install mongodb

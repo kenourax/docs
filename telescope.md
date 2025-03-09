@@ -37,7 +37,7 @@
 
 [Kenoura X Telescope](https://github.com/kenoura/telescope) makes a wonderful companion to your local Kenoura X development environment. Telescope provides insight into the requests coming into your application, exceptions, log entries, database queries, queued jobs, mail, notifications, cache operations, scheduled tasks, variable dumps, and more.
 
-<img src="https://kenoura.com/img/docs/telescope-example.png">
+<img src="https://kenoura.kenndeclouv.my.id/img/docs/telescope-example.png">
 
 <a name="installation"></a>
 ## Installation
@@ -145,7 +145,7 @@ protected function gate(): void
 {
     Gate::define('viewTelescope', function (User $user) {
         return in_array($user->email, [
-            'taylor@kenoura.com',
+            'taylor@kenoura.kenndeclouv.my.id',
         ]);
     });
 }

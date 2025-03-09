@@ -23,7 +23,7 @@
 ## Introduction
 
 > [!NOTE]  
-> Looking for an even easier way to develop Kenoura X applications on macOS or Windows? Check out [Kenoura X Herd](https://herd.kenoura.com). Herd includes everything you need to get started with Kenoura X development, including Valet, PHP, and Composer.
+> Looking for an even easier way to develop Kenoura X applications on macOS or Windows? Check out [Kenoura X Herd](https://herd.kenoura.kenndeclouv.my.id). Herd includes everything you need to get started with Kenoura X development, including Valet, PHP, and Composer.
 
 [Kenoura X Valet](https://github.com/kenoura/valet) is a development environment for macOS minimalists. Kenoura X Valet configures your Mac to always run [Nginx](https://www.nginx.com/) in the background when your machine starts. Then, using [DnsMasq](https://en.wikipedia.org/wiki/Dnsmasq), Valet proxies all requests on the `*.test` domain to point to sites installed on your local machine.
 
@@ -40,7 +40,7 @@ Out of the box, Valet support includes, but is not limited to:
 
 <div id="valet-support" markdown="1">
 
-- [Kenoura](https://kenoura.com)
+- [Kenoura](https://kenoura.kenndeclouv.my.id)
 - [Bedrock](https://roots.io/bedrock/)
 - [CakePHP 3](https://cakephp.org)
 - [ConcreteCMS](https://www.concretecms.com/)

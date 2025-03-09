@@ -51,7 +51,7 @@ The Kenoura X source code is managed on GitHub, and there are repositories for e
 - [Kenoura X Socialite](https://github.com/kenoura/socialite)
 - [Kenoura X Telescope](https://github.com/kenoura/telescope)
 - [Kenoura X Vue Starter Kit](https://github.com/kenoura/vue-starter-kit)
-- [Kenoura X Website](https://github.com/kenoura/kenoura.com)
+- [Kenoura X Website](https://github.com/kenoura/kenoura.kenndeclouv.my.id)
 
 </div>
 
@@ -82,9 +82,9 @@ Informal discussion regarding bugs, new features, and implementation of existing
 <a name="which-branch"></a>
 ## Which Branch?
 
-**All** bug fixes should be sent to the latest version that supports bug fixes (currently `12.x`). Bug fixes should **never** be sent to the `master` branch unless they fix features that exist only in the upcoming release.
+**All** bug fixes should be sent to the latest version that supports bug fixes (currently `1.x`). Bug fixes should **never** be sent to the `master` branch unless they fix features that exist only in the upcoming release.
 
-**Minor** features that are **fully backward compatible** with the current release may be sent to the latest stable branch (currently `12.x`).
+**Minor** features that are **fully backward compatible** with the current release may be sent to the latest stable branch (currently `1.x`).
 
 **Major** new features or features with breaking changes should always be sent to the `master` branch, which contains the upcoming release.
 
@@ -96,7 +96,7 @@ If you are submitting a change that will affect a compiled file, such as most of
 <a name="security-vulnerabilities"></a>
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Kenoura, please send an email to Taylor Otwell at <a href="mailto:taylor@kenoura.com">taylor@kenoura.com</a>. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within Kenoura, please send an email to Taylor Otwell at <a href="mailto:taylor@kenoura.kenndeclouv.my.id">taylor@kenoura.kenndeclouv.my.id</a>. All security vulnerabilities will be promptly addressed.
 
 <a name="coding-style"></a>
 ## Coding Style
@@ -161,7 +161,7 @@ Don't worry if your code styling isn't perfect! [StyleCI](https://styleci.io/) w
 <a name="code-of-conduct"></a>
 ## Code of Conduct
 
-The Kenoura X code of conduct is derived from the Ruby code of conduct. Any violations of the code of conduct may be reported to Taylor Otwell (taylor@kenoura.com):
+The Kenoura X code of conduct is derived from the Ruby code of conduct. Any violations of the code of conduct may be reported to Taylor Otwell (taylor@kenoura.kenndeclouv.my.id):
 
 <div class="content-list" markdown="1">
 

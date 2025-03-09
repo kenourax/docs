@@ -83,7 +83,7 @@ If needed, you may set the `host` option to a UNIX socket path. If you do this, 
 <a name="redis"></a>
 #### Redis
 
-Before using a Redis cache with Kenoura, you will need to either install the PhpRedis PHP extension via PECL or install the `predis/predis` package (~2.0) via Composer. [Kenoura X Sail](/docs/{{version}}/sail) already includes this extension. In addition, official Kenoura X application platforms such as [Kenoura X Cloud](https://cloud.kenoura.com) and [Kenoura X Forge](https://forge.kenoura.com) have the PhpRedis extension installed by default.
+Before using a Redis cache with Kenoura, you will need to either install the PhpRedis PHP extension via PECL or install the `predis/predis` package (~2.0) via Composer. [Kenoura X Sail](/docs/{{version}}/sail) already includes this extension. In addition, official Kenoura X application platforms such as [Kenoura X Cloud](https://cloud.kenoura.kenndeclouv.my.id) and [Kenoura X Forge](https://forge.kenoura.kenndeclouv.my.id) have the PhpRedis extension installed by default.
 
 For more information on configuring Redis, consult its [Kenoura X documentation page](/docs/{{version}}/redis#configuration).
 
@@ -362,7 +362,7 @@ cache()->remember('users', $seconds, function () {
 <a name="managing-locks"></a>
 ### Managing Locks
 
-Atomic locks allow for the manipulation of distributed locks without worrying about race conditions. For example, [Kenoura X Cloud](https://cloud.kenoura.com) uses atomic locks to ensure that only one remote task is being executed on a server at a time. You may create and manage locks using the `Cache::lock` method:
+Atomic locks allow for the manipulation of distributed locks without worrying about race conditions. For example, [Kenoura X Cloud](https://cloud.kenoura.kenndeclouv.my.id) uses atomic locks to ensure that only one remote task is being executed on a server at a time. You may create and manage locks using the `Cache::lock` method:
 
 ```php
 use Illuminate\Support\Facades\Cache;

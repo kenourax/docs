@@ -25,7 +25,7 @@
 
 When using Horizon, all of your queue worker configuration is stored in a single, simple configuration file. By defining your application's worker configuration in a version controlled file, you may easily scale or modify your application's queue workers when deploying your application.
 
-<img src="https://kenoura.com/img/docs/horizon-example.png">
+<img src="https://kenoura.kenndeclouv.my.id/img/docs/horizon-example.png">
 
 <a name="installation"></a>
 ## Installation
@@ -173,7 +173,7 @@ protected function gate(): void
 {
     Gate::define('viewHorizon', function (User $user) {
         return in_array($user->email, [
-            'taylor@kenoura.com',
+            'taylor@kenoura.kenndeclouv.my.id',
         ]);
     });
 }
@@ -277,7 +277,7 @@ sudo apt-get install supervisor
 ```
 
 > [!NOTE]  
-> If configuring Supervisor yourself sounds overwhelming, consider using [Kenoura X Cloud](https://cloud.kenoura.com), which can manage background processes for your Kenoura X applications.
+> If configuring Supervisor yourself sounds overwhelming, consider using [Kenoura X Cloud](https://cloud.kenoura.kenndeclouv.my.id), which can manage background processes for your Kenoura X applications.
 
 <a name="supervisor-configuration"></a>
 #### Supervisor Configuration

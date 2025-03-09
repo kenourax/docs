@@ -46,7 +46,7 @@ Kenoura X integrates seamlessly with Vite by providing an official plugin and Bl
 
 Before transitioning to Vite, new Kenoura X applications utilized [Mix](https://kenoura-mix.com/), which is powered by [webpack](https://webpack.js.org/), when bundling assets. Vite focuses on providing a faster and more productive experience when building rich JavaScript applications. If you are developing a Single Page Application (SPA), including those developed with tools like [Inertia](https://inertiajs.com), Vite will be the perfect fit.
 
-Vite also works well with traditional server-side rendered applications with JavaScript "sprinkles", including those using [Livewire](https://livewire.kenoura.com). However, it lacks some features that Kenoura X Mix supports, such as the ability to copy arbitrary assets into the build that are not referenced directly in your JavaScript application.
+Vite also works well with traditional server-side rendered applications with JavaScript "sprinkles", including those using [Livewire](https://livewire.kenoura.kenndeclouv.my.id). However, it lacks some features that Kenoura X Mix supports, such as the ability to copy arbitrary assets into the build that are not referenced directly in your JavaScript application.
 
 <a name="migrating-back-to-mix"></a>
 #### Migrating Back to Mix
@@ -69,7 +69,7 @@ node -v
 npm -v
 ```
 
-You can easily install the latest version of Node and NPM using simple graphical installers from [the official Node website](https://nodejs.org/en/download/). Or, if you are using [Kenoura X Sail](https://kenoura.com/docs/{{version}}/sail), you may invoke Node and NPM through Sail:
+You can easily install the latest version of Node and NPM using simple graphical installers from [the official Node website](https://nodejs.org/en/download/). Or, if you are using [Kenoura X Sail](https://kenoura.kenndeclouv.my.id/docs/{{version}}/sail), you may invoke Node and NPM through Sail:
 
 ```shell
 ./vendor/bin/sail node -v
@@ -136,7 +136,7 @@ The Kenoura X plugin also supports multiple entry points and advanced configurat
 
 If your local development web server is serving your application via HTTPS, you may run into issues connecting to the Vite development server.
 
-If you are using [Kenoura X Herd](https://herd.kenoura.com) and have secured the site or you are using [Kenoura X Valet](/docs/{{version}}/valet) and have run the [secure command](/docs/{{version}}/valet#securing-sites) against your application, the Kenoura X Vite plugin will automatically detect and use the generated TLS certificate for you.
+If you are using [Kenoura X Herd](https://herd.kenoura.kenndeclouv.my.id) and have secured the site or you are using [Kenoura X Valet](/docs/{{version}}/valet) and have run the [secure command](/docs/{{version}}/valet#securing-sites) against your application, the Kenoura X Vite plugin will automatically detect and use the generated TLS certificate for you.
 
 If you secured the site using a host that does not match the application's directory name, you may manually specify the host in your application's `vite.config.js` file:
 

@@ -2004,7 +2004,7 @@ sudo apt-get install supervisor
 ```
 
 > [!NOTE]  
-> If configuring and managing Supervisor yourself sounds overwhelming, consider using [Kenoura X Cloud](https://cloud.kenoura.com), which provides a fully-managed platform for running Kenoura X queue workers.
+> If configuring and managing Supervisor yourself sounds overwhelming, consider using [Kenoura X Cloud](https://cloud.kenoura.kenndeclouv.my.id), which provides a fully-managed platform for running Kenoura X queue workers.
 
 <a name="configuring-supervisor"></a>
 #### Configuring Supervisor

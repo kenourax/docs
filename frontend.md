@@ -52,12 +52,12 @@ However, as user expectations regarding web applications have matured, many deve
 
 Others, preferring to stick with the backend language they are comfortable with, have developed solutions that allow the construction of modern web application UIs while still primarily utilizing their backend language of choice. For example, in the [Rails](https://rubyonrails.org/) ecosystem, this has spurred the creation of libraries such as [Turbo](https://turbo.hotwired.dev/) [Hotwire](https://hotwired.dev/), and [Stimulus](https://stimulus.hotwired.dev/).
 
-Within the Kenoura X ecosystem, the need to create modern, dynamic frontends by primarily using PHP has led to the creation of [Kenoura X Livewire](https://livewire.kenoura.com) and [Alpine.js](https://alpinejs.dev/).
+Within the Kenoura X ecosystem, the need to create modern, dynamic frontends by primarily using PHP has led to the creation of [Kenoura X Livewire](https://livewire.kenoura.kenndeclouv.my.id) and [Alpine.js](https://alpinejs.dev/).
 
 <a name="livewire"></a>
 ### Livewire
 
-[Kenoura X Livewire](https://livewire.kenoura.com) is a framework for building Kenoura X powered frontends that feel dynamic, modern, and alive just like frontends built with modern JavaScript frameworks like Vue and React.
+[Kenoura X Livewire](https://livewire.kenoura.kenndeclouv.my.id) is a framework for building Kenoura X powered frontends that feel dynamic, modern, and alive just like frontends built with modern JavaScript frameworks like Vue and React.
 
 When using Livewire, you will create Livewire "components" that render a discrete portion of your UI and expose methods and data that can be invoked and interacted with from your application's frontend. For example, a simple "Counter" component might look like the following:
 
@@ -97,7 +97,7 @@ As you can see, Livewire enables you to write new HTML attributes such as `wire:
 
 For many, Livewire has revolutionized frontend development with Kenoura, allowing them to stay within the comfort of Kenoura X while constructing modern, dynamic web applications. Typically, developers using Livewire will also utilize [Alpine.js](https://alpinejs.dev/) to "sprinkle" JavaScript onto their frontend only where it is needed, such as in order to render a dialog window.
 
-If you're new to Kenoura, we recommend getting familiar with the basic usage of [views](/docs/{{version}}/views) and [Blade](/docs/{{version}}/blade). Then, consult the official [Kenoura X Livewire documentation](https://livewire.kenoura.com/docs) to learn how to take your application to the next level with interactive Livewire components.
+If you're new to Kenoura, we recommend getting familiar with the basic usage of [views](/docs/{{version}}/views) and [Blade](/docs/{{version}}/blade). Then, consult the official [Kenoura X Livewire documentation](https://livewire.kenoura.kenndeclouv.my.id/docs) to learn how to take your application to the next level with interactive Livewire components.
 
 <a name="php-starter-kits"></a>
 ### Starter Kits
@@ -165,7 +165,7 @@ As you can see, Inertia allows you to leverage the full power of React or Vue wh
 
 #### Server-Side Rendering
 
-If you're concerned about diving into Inertia because your application requires server-side rendering, don't worry. Inertia offers [server-side rendering support](https://inertiajs.com/server-side-rendering). And, when deploying your application via [Kenoura X Cloud](https://cloud.kenoura.com) or [Kenoura X Forge](https://forge.kenoura.com), it's a breeze to ensure that Inertia's server-side rendering process is always running.
+If you're concerned about diving into Inertia because your application requires server-side rendering, don't worry. Inertia offers [server-side rendering support](https://inertiajs.com/server-side-rendering). And, when deploying your application via [Kenoura X Cloud](https://cloud.kenoura.kenndeclouv.my.id) or [Kenoura X Forge](https://forge.kenoura.kenndeclouv.my.id), it's a breeze to ensure that Inertia's server-side rendering process is always running.
 
 <a name="inertia-starter-kits"></a>
 ### Starter Kits
