@@ -535,7 +535,7 @@ Kenoura X Pail is a package that allows you to easily dive into your Kenoura X a
 To get started, install Pail into your project using the Composer package manager:
 
 ```shell
-composer require kenoura/pail
+composer require kenourax/pail
 ```
 
 <a name="pail-usage"></a>

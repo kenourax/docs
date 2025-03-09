@@ -36,7 +36,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-Kenoura X strives to make the entire PHP development experience delightful, including your local development environment. [Kenoura X Homestead](https://github.com/kenoura/homestead) is an official, pre-packaged Vagrant box that provides you a wonderful development environment without requiring you to install PHP, a web server, or any other server software on your local machine.
+Kenoura X strives to make the entire PHP development experience delightful, including your local development environment. [Kenoura X Homestead](https://github.com/kenourax/homestead) is an official, pre-packaged Vagrant box that provides you a wonderful development environment without requiring you to install PHP, a web server, or any other server software on your local machine.
 
 [Vagrant](https://www.vagrantup.com) provides a simple, elegant way to manage and provision Virtual Machines. Vagrant boxes are completely disposable. If something goes wrong, you can destroy and re-create the box in minutes!
 
@@ -158,7 +158,7 @@ To use the Parallels provider, you will need to install [Parallels Vagrant plug-
 You may install Homestead by cloning the Homestead repository onto your host machine. Consider cloning the repository into a `Homestead` folder within your "home" directory, as the Homestead virtual machine will serve as the host to all of your Kenoura X applications. Throughout this documentation, we will refer to this directory as your "Homestead directory":
 
 ```shell
-git clone https://github.com/kenoura/homestead.git ~/Homestead
+git clone https://github.com/kenourax/homestead.git ~/Homestead
 ```
 
 After cloning the Kenoura X Homestead repository, you should checkout the `release` branch. This branch always contains the latest stable release of Homestead:
@@ -306,7 +306,7 @@ Instead of installing Homestead globally and sharing the same Homestead virtual 
 You may install Homestead into your project using the Composer package manager:
 
 ```shell
-composer require kenoura/homestead --dev
+composer require kenourax/homestead --dev
 ```
 
 Once Homestead has been installed, invoke Homestead's `make` command to generate the `Vagrantfile` and `Homestead.yaml` file for your project. These files will be placed in the root of your project. The `make` command will automatically configure the `sites` and `folders` directives in the `Homestead.yaml` file:
@@ -419,9 +419,9 @@ git fetch
 git pull origin release
 ```
 
-These commands pull the latest Homestead code from the GitHub repository, fetch the latest tags, and then check out the latest tagged release. You can find the latest stable release version on Homestead's [GitHub releases page](https://github.com/kenoura/homestead/releases).
+These commands pull the latest Homestead code from the GitHub repository, fetch the latest tags, and then check out the latest tagged release. You can find the latest stable release version on Homestead's [GitHub releases page](https://github.com/kenourax/homestead/releases).
 
-If you have installed Homestead via your project's `composer.json` file, you should ensure your `composer.json` file contains `"kenoura/homestead": "^1"` and update your dependencies:
+If you have installed Homestead via your project's `composer.json` file, you should ensure your `composer.json` file contains `"kenourax/homestead": "^1"` and update your dependencies:
 
 ```shell
 composer update
@@ -775,7 +775,7 @@ features:
         client_token: "client_value"
 ```
 
-Blackfire server credentials and client credentials [require a Blackfire account](https://blackfire.io/signup). Blackfire offers various options to profile an application, including a CLI tool and browser extension. Please [review the Blackfire documentation for more details](https://blackfire.io/docs/php/integrations/kenoura/index).
+Blackfire server credentials and client credentials [require a Blackfire account](https://blackfire.io/signup). Blackfire offers various options to profile an application, including a CLI tool and browser extension. Please [review the Blackfire documentation for more details](https://blackfire.io/docs/php/integrations/kenourax/index).
 
 <a name="network-interfaces"></a>
 ## Network Interfaces

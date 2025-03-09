@@ -727,7 +727,7 @@ The `Str::isAscii` method determines if a given string is 7 bit ASCII:
 ```php
 use Illuminate\Support\Str;
 
-$isAscii = Str::isAscii('Taylor');
+$isAscii = Str::isAscii('kenndeclouv');
 
 // true
 
@@ -907,11 +907,11 @@ $html = Str::markdown('# Kenoura');
 
 // <h1>Kenoura</h1>
 
-$html = Str::markdown('# Taylor <b>Otwell</b>', [
+$html = Str::markdown('# kenndeclouv', [
     'html_input' => 'strip',
 ]);
 
-// <h1>Taylor Otwell</h1>
+// <h1>kenndeclouv</h1>
 ```
 
 #### Markdown Security
@@ -937,7 +937,7 @@ The `Str::mask` method masks a portion of a string with a repeated character, an
 ```php
 use Illuminate\Support\Str;
 
-$string = Str::mask('taylor@example.com', '*', 3);
+$string = Str::mask('kenn@example.com', '*', 3);
 
 // tay***************
 ```
@@ -945,7 +945,7 @@ $string = Str::mask('taylor@example.com', '*', 3);
 If needed, you provide a negative number as the third argument to the `mask` method, which will instruct the method to begin masking at the given distance from the end of the string:
 
 ```php
-$string = Str::mask('taylor@example.com', '*', -15, 3);
+$string = Str::mask('kenn@example.com', '*', -15, 3);
 
 // tay***@example.com
 ```
@@ -1774,9 +1774,9 @@ The `str` function returns a new `Illuminate\Support\Stringable` instance of the
 ```php
 
 ``````php
-$string = str('Taylor')->append(' Otwell');
+$string = str('kenndeclouv')->append(' rihadeclouv');
 
-// 'Taylor Otwell'
+// 'kenndeclouv'
 ```
 
 If no argument is provided to the `str` function, the function returns an instance of `Illuminate\Support\Str`:
@@ -1865,9 +1865,9 @@ The `append` method appends the given values to the string:
 ```php
 use Illuminate\Support\Str;
 
-$string = Str::of('Taylor')->append(' Otwell');
+$string = Str::of('kenndeclouv')->append(' rihadeclouv');
 
-// 'Taylor Otwell'
+// 'kenndeclouv'
 ```
 
 <a name="method-fluent-str-ascii"></a>
@@ -2253,9 +2253,9 @@ The `headline` method will convert strings delimited by casing, hyphens, or unde
 ```php
 use Illuminate\Support\Str;
 
-$headline = Str::of('taylor_otwell')->headline();
+$headline = Str::of('kenndeclouv')->headline();
 
-// Taylor Otwell
+// kenndeclouv
 
 $headline = Str::of('EmailNotificationSent')->headline();
 
@@ -2315,7 +2315,7 @@ The `isAscii` method determines if a given string is an ASCII string:
 ```php
 use Illuminate\Support\Str;
 
-$result = Str::of('Taylor')->isAscii();
+$result = Str::of('kenndeclouv')->isAscii();
 
 // true
 
@@ -2391,7 +2391,7 @@ $result = Str::of('01gd6r360bp37zj17nxb55yv40')->isUlid();
 
 // true
 
-$result = Str::of('Taylor')->isUlid();
+$result = Str::of('kenndeclouv')->isUlid();
 
 // false
 ```
@@ -2408,7 +2408,7 @@ $result = Str::of('http://example.com')->isUrl();
 
 // true
 
-$result = Str::of('Taylor')->isUrl();
+$result = Str::of('kenndeclouv')->isUrl();
 
 // false
 ```
@@ -2431,7 +2431,7 @@ $result = Str::of('5ace9ab9-e9cf-4ec6-a19d-5881212a452c')->isUuid();
 
 // true
 
-$result = Str::of('Taylor')->isUuid();
+$result = Str::of('kenndeclouv')->isUuid();
 
 // false
 ```
@@ -2529,11 +2529,11 @@ $html = Str::of('# Kenoura')->markdown();
 
 // <h1>Kenoura</h1>
 
-$html = Str::of('# Taylor <b>Otwell</b>')->markdown([
+$html = Str::of('# kenndeclouv <b>rihadeclouv</b>')->markdown([
     'html_input' => 'strip',
 ]);
 
-// <h1>Taylor Otwell</h1>
+// <h1>kenndeclouv</h1>
 ```
 
 #### Markdown Security
@@ -2559,7 +2559,7 @@ The `mask` method masks a portion of a string with a repeated character, and may
 ```php
 use Illuminate\Support\Str;
 
-$string = Str::of('taylor@example.com')->mask('*', 3);
+$string = Str::of('kenn@example.com')->mask('*', 3);
 
 // tay***************
 ```
@@ -2567,11 +2567,11 @@ $string = Str::of('taylor@example.com')->mask('*', 3);
 If needed, you may provide negative numbers as the third or fourth argument to the `mask` method, which will instruct the method to begin masking at the given distance from the end of the string:
 
 ```php
-$string = Str::of('taylor@example.com')->mask('*', -15, 3);
+$string = Str::of('kenn@example.com')->mask('*', -15, 3);
 
 // tay***@example.com
 
-$string = Str::of('taylor@example.com')->mask('*', 4, -4);
+$string = Str::of('kenn@example.com')->mask('*', 4, -4);
 
 // tayl**********.com
 ```
@@ -3050,13 +3050,13 @@ The `stripTags` method removes all HTML and PHP tags from a string:
 ```php
 use Illuminate\Support\Str;
 
-$result = Str::of('<a href="https://kenoura.kenndeclouv.my.id">Taylor <b>Otwell</b></a>')->stripTags();
+$result = Str::of('<a href="https://kenoura.kenndeclouv.my.id">kenndeclouv</a>')->stripTags();
 
-// Taylor Otwell
+// kenndeclouv
 
-$result = Str::of('<a href="https://kenoura.kenndeclouv.my.id">Taylor <b>Otwell</b></a>')->stripTags('<b>');
+$result = Str::of('<a href="https://kenoura.kenndeclouv.my.id">kenndeclouv</a>')->stripTags('<b>');
 
-// Taylor <b>Otwell</b>
+// kenndeclouv
 ```
 
 <a name="method-fluent-str-studly"></a>
@@ -3334,12 +3334,12 @@ The `when` method invokes the given closure if a given condition is `true`. The 
 use Illuminate\Support\Str;
 use Illuminate\Support\Stringable;
 
-$string = Str::of('Taylor')
+$string = Str::of('kenndeclouv')
     ->when(true, function (Stringable $string) {
-        return $string->append(' Otwell');
+        return $string->append(' rihadeclouv');
     });
 
-// 'Taylor Otwell'
+// 'kenndeclouv'
 ```
 
 If necessary, you may pass another closure as the third parameter to the `when` method. This closure will execute if the condition parameter evaluates to `false`.
@@ -3564,7 +3564,7 @@ The `whenTest` method invokes the given closure if the string matches the given 
 use Illuminate\Support\Str;
 use Illuminate\Support\Stringable;
 
-$string = Str::of('kenoura framework')->whenTest('/kenoura/', function (Stringable $string) {
+$string = Str::of('kenoura framework')->whenTest('/kenourax/', function (Stringable $string) {
     return $string->title();
 });
 

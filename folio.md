@@ -18,7 +18,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-[Kenoura X Folio](https://github.com/kenoura/folio) is a powerful page based router designed to simplify routing in Kenoura X applications. With Kenoura X Folio, generating a route becomes as effortless as creating a Blade template within your application's `resources/views/pages` directory.
+[Kenoura X Folio](https://github.com/kenourax/folio) is a powerful page based router designed to simplify routing in Kenoura X applications. With Kenoura X Folio, generating a route becomes as effortless as creating a Blade template within your application's `resources/views/pages` directory.
 
 For example, to create a page that is accessible at the `/greeting` URL, just create a `greeting.blade.php` file in your application's `resources/views/pages` directory:
 
@@ -34,7 +34,7 @@ For example, to create a page that is accessible at the `/greeting` URL, just cr
 To get started, install Folio into your project using the Composer package manager:
 
 ```shell
-composer require kenoura/folio
+composer require kenourax/folio
 ```
 
 After installing Folio, you may execute the `folio:install` Artisan command, which will install Folio's service provider into your application. This service provider registers the directory where Folio will search for routes / pages:

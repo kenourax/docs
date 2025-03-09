@@ -59,7 +59,7 @@ Kenoura X Tinker is a powerful REPL for the Kenoura X framework, powered by the 
 All Kenoura X applications include Tinker by default. However, you may install Tinker using Composer if you have previously removed it from your application:
 
 ```shell
-composer require kenoura/tinker
+composer require kenourax/tinker
 ```
 
 > [!NOTE]  
@@ -491,7 +491,7 @@ use function Kenoura\Prompts\search;
 return [
     'user' => fn () => search(
         label: 'Search for a user:',
-        placeholder: 'E.g. Taylor Otwell',
+        placeholder: 'E.g. kenndeclouv',
         options: fn ($value) => strlen($value) > 0
             ? User::where('name', 'like', "%{$value}%")->pluck('name', 'id')->all()
             : []
@@ -580,7 +580,7 @@ public function handle(): void
 The `ask` method also accepts an optional second argument which specifies the default value that should be returned if no user input is provided:
 
 ```php
-$name = $this->ask('What is your name?', 'Taylor');
+$name = $this->ask('What is your name?', 'kenndeclouv');
 ```
 
 The `secret` method is similar to `ask`, but the user's input will not be visible to them as they type in the console. This method is useful when asking for sensitive information such as passwords:
@@ -614,7 +614,7 @@ if ($this->confirm('Do you wish to continue?', true)) {
 The `anticipate` method can be used to provide auto-completion for possible choices. The user can still provide any answer, regardless of the auto-completion hints:
 
 ```php
-$name = $this->anticipate('What is your name?', ['Taylor', 'Dayle']);
+$name = $this->anticipate('What is your name?', ['kenndeclouv', 'Dayle']);
 ```
 
 Alternatively, you may pass a closure as the second argument to the `anticipate` method. The closure will be called each time the user types an input character. The closure should accept a string parameter containing the user's input so far, and return an array of options for auto-completion:
@@ -633,7 +633,7 @@ If you need to give the user a predefined set of choices when asking a question,
 ```php
 $name = $this->choice(
     'What is your name?',
-    ['Taylor', 'Dayle'],
+    ['kenndeclouv', 'Dayle'],
     $defaultIndex
 );
 ```
@@ -643,7 +643,7 @@ In addition, the `choice` method accepts optional fourth and fifth arguments for
 ```php
 $name = $this->choice(
     'What is your name?',
-    ['Taylor', 'Dayle'],
+    ['kenndeclouv', 'Dayle'],
     $defaultIndex,
     $maxAttempts = null,
     $allowMultipleSelections = false

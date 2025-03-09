@@ -338,7 +338,7 @@ If you would like, you may also specify a `replyTo` address:
 return new Envelope(
     from: new Address('jeffrey@example.com', 'Jeffrey Way'),
     replyTo: [
-        new Address('taylor@example.com', 'Taylor Otwell'),
+        new Address('kenn@example.com', 'kenndeclouv'),
     ],
     subject: 'Order Shipped',
 );
@@ -960,7 +960,7 @@ Mail::to($request->user())
 Occasionally, you may need to send a mailable to a list of recipients by iterating over an array of recipients / email addresses. However, since the `to` method appends email addresses to the mailable's list of recipients, each iteration through the loop will send another email to every previous recipient. Therefore, you should always re-create the mailable instance for each recipient:
 
 ```php
-foreach (['taylor@example.com', 'dries@example.com'] as $recipient) {
+foreach (['kenn@example.com', 'dries@example.com'] as $recipient) {
     Mail::to($recipient)->send(new OrderShipped($order));
 }
 ```
@@ -1163,7 +1163,7 @@ test('mailable content', function () {
     $mailable = new InvoicePaid($user);
 
     $mailable->assertFrom('jeffrey@example.com');
-    $mailable->assertTo('taylor@example.com');
+    $mailable->assertTo('kenn@example.com');
     $mailable->assertHasCc('abigail@example.com');
     $mailable->assertHasBcc('victoria@example.com');
     $mailable->assertHasReplyTo('tyler@example.com');
@@ -1197,7 +1197,7 @@ public function test_mailable_content(): void
     $mailable = new InvoicePaid($user);
 
     $mailable->assertFrom('jeffrey@example.com');
-    $mailable->assertTo('taylor@example.com');
+    $mailable->assertTo('kenn@example.com');
     $mailable->assertHasCc('abigail@example.com');
     $mailable->assertHasBcc('victoria@example.com');
     $mailable->assertHasReplyTo('tyler@example.com');
@@ -1399,7 +1399,7 @@ use Illuminate\Support\Facades\Mail;
 public function boot(): void
 {
     if ($this->app->environment('local')) {
-        Mail::alwaysTo('taylor@example.com');
+        Mail::alwaysTo('kenn@example.com');
     }
 }
 ```

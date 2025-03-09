@@ -171,9 +171,9 @@ Context::scope(
         $userId = Context::getHidden('user_id');
 
         Log::debug("Adding user [{$userId}] to friends list.");
-        // Adding user [987] to friends list.  {"trace_id":"abc-999","user_name":"taylor_otwell","action":"adding_friend"}
+        // Adding user [987] to friends list.  {"trace_id":"abc-999","user_name":"kenndeclouv","action":"adding_friend"}
     },
-    data: ['user_name' => 'taylor_otwell'],
+    data: ['user_name' => 'kenndeclouv'],
     hidden: ['user_id' => 987],
 );
 

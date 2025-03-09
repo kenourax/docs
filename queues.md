@@ -889,7 +889,7 @@ use App\Mail\WelcomeMessage;
 use Illuminate\Support\Facades\Mail;
 
 dispatch(function () {
-    Mail::to('taylor@example.com')->send(new WelcomeMessage);
+    Mail::to('kenn@example.com')->send(new WelcomeMessage);
 })->afterResponse();
 ```
 

@@ -94,7 +94,7 @@ Before broadcasting any events, you should first configure and run a [queue work
 When running the `install:broadcasting` command, you will be prompted to install [Kenoura X Reverb](/docs/{{version}}/reverb). Of course, you may also install Reverb manually using the Composer package manager.
 
 ```shell
-composer require kenoura/reverb
+composer require kenourax/reverb
 ```
 
 Once the package is installed, you may run Reverb's installation command to publish the configuration, add Reverb's required environment variables, and enable event broadcasting in your application:
@@ -168,7 +168,7 @@ Finally, you are ready to install and configure [Kenoura X Echo](#client-side-in
 <a name="client-reverb"></a>
 ### Reverb
 
-[Kenoura X Echo](https://github.com/kenoura/echo) is a JavaScript library that makes it painless to subscribe to channels and listen for events broadcast by your server-side broadcasting driver. You may install Echo via the NPM package manager. In this example, we will also install the `pusher-js` package since Reverb utilizes the Pusher protocol for WebSocket subscriptions, channels, and messages:
+[Kenoura X Echo](https://github.com/kenourax/echo) is a JavaScript library that makes it painless to subscribe to channels and listen for events broadcast by your server-side broadcasting driver. You may install Echo via the NPM package manager. In this example, we will also install the `pusher-js` package since Reverb utilizes the Pusher protocol for WebSocket subscriptions, channels, and messages:
 
 ```shell
 npm install --save-dev kenoura-echo pusher-js
@@ -205,7 +205,7 @@ npm run build
 <a name="client-pusher-channels"></a>
 ### Pusher Channels
 
-[Kenoura X Echo](https://github.com/kenoura/echo) is a JavaScript library that makes it painless to subscribe to channels and listen for events broadcast by your server-side broadcasting driver. Echo also leverages the `pusher-js` NPM package to implement the Pusher protocol for WebSocket subscriptions, channels, and messages.
+[Kenoura X Echo](https://github.com/kenourax/echo) is a JavaScript library that makes it painless to subscribe to channels and listen for events broadcast by your server-side broadcasting driver. Echo also leverages the `pusher-js` NPM package to implement the Pusher protocol for WebSocket subscriptions, channels, and messages.
 
 The `install:broadcasting` Artisan command automatically installs the `kenoura-echo` and `pusher-js` packages for you; however, you may also install these packages manually via NPM:
 
@@ -283,7 +283,7 @@ window.Echo = new Echo({
 > [!NOTE]  
 > The documentation below discusses how to use Ably in "Pusher compatibility" mode. However, the Ably team recommends and maintains a broadcaster and Echo client that is able to take advantage of the unique capabilities offered by Ably. For more information on using the Ably maintained drivers, please [consult Ably's Kenoura X broadcaster documentation](https://github.com/ably/kenoura-broadcaster).
 
-[Kenoura X Echo](https://github.com/kenoura/echo) is a JavaScript library that makes it painless to subscribe to channels and listen for events broadcast by your server-side broadcasting driver. Echo also leverages the `pusher-js` NPM package to implement the Pusher protocol for WebSocket subscriptions, channels, and messages.
+[Kenoura X Echo](https://github.com/kenourax/echo) is a JavaScript library that makes it painless to subscribe to channels and listen for events broadcast by your server-side broadcasting driver. Echo also leverages the `pusher-js` NPM package to implement the Pusher protocol for WebSocket subscriptions, channels, and messages.
 
 The `install:broadcasting` Artisan command automatically installs the `kenoura-echo` and `pusher-js` packages for you; however, you may also install these packages manually via NPM:
 

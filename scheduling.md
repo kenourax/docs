@@ -75,9 +75,9 @@ When scheduling Artisan commands using the command's class name, you may pass an
 use App\Console\Commands\SendEmailsCommand;
 use Illuminate\Support\Facades\Schedule;
 
-Schedule::command('emails:send Taylor --force')->daily();
+Schedule::command('emails:send kenndeclouv --force')->daily();
 
-Schedule::command(SendEmailsCommand::class, ['Taylor', '--force'])->daily();
+Schedule::command(SendEmailsCommand::class, ['kenndeclouv', '--force'])->daily();
 ```
 
 <a name="scheduling-artisan-closure-commands"></a>
@@ -96,7 +96,7 @@ If you need to pass arguments to the closure command, you may provide them to th
 ```php
 Artisan::command('emails:send {user} {--force}', function ($user) {
     // ...
-})->purpose('Send emails to the specified user')->schedule(['Taylor', '--force'])->daily();
+})->purpose('Send emails to the specified user')->schedule(['kenndeclouv', '--force'])->daily();
 ```
 
 <a name="scheduling-queued-jobs"></a>
@@ -515,7 +515,7 @@ Using the `emailOutputTo` method, you may email the output to an email address o
 Schedule::command('report:generate')
     ->daily()
     ->sendOutputTo($filePath)
-    ->emailOutputTo('taylor@example.com');
+    ->emailOutputTo('kenn@example.com');
 ```
 
 If you only want to email the output if the scheduled Artisan or system command terminates with a non-zero exit code, use the `emailOutputOnFailure` method:
@@ -523,7 +523,7 @@ If you only want to email the output if the scheduled Artisan or system command 
 ```php
 Schedule::command('report:generate')
     ->daily()
-    ->emailOutputOnFailure('taylor@example.com');
+    ->emailOutputOnFailure('kenn@example.com');
 ```
 
 > [!WARNING]  

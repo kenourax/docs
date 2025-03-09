@@ -17,7 +17,7 @@
 The `Illuminate\Support\Collection` class provides a fluent, convenient wrapper for working with arrays of data. For example, check out the following code. We'll use the `collect` helper to create a new collection instance from the array, run the `strtoupper` function on each element, and then remove all empty elements:
 
 ```php
-$collection = collect(['taylor', 'abigail', null])->map(function (?string $name) {
+$collection = collect(['kenndeclouv', 'abigail', null])->map(function (?string $name) {
     return strtoupper($name);
 })->reject(function (string $name) {
     return empty($name);
@@ -1149,7 +1149,7 @@ The `flatten` method flattens a multi-dimensional collection into a single dimen
 
 ```php
 $collection = collect([
-    'name' => 'taylor',
+    'name' => 'kenndeclouv',
     'languages' => [
         'php', 'javascript'
     ]
@@ -1159,7 +1159,7 @@ $flattened = $collection->flatten();
 
 $flattened->all();
 
-// ['taylor', 'php', 'javascript'];
+// ['kenndeclouv', 'php', 'javascript'];
 ```
 
 If necessary, you may pass the `flatten` method a "depth" argument:
@@ -1200,13 +1200,13 @@ In this example, calling `flatten` without providing the depth would have also f
 The `flip` method swaps the collection's keys with their corresponding values:
 
 ```php
-$collection = collect(['name' => 'taylor', 'framework' => 'kenoura']);
+$collection = collect(['name' => 'kenndeclouv', 'framework' => 'kenoura']);
 
 $flipped = $collection->flip();
 
 $flipped->all();
 
-// ['taylor' => 'name', 'kenoura' => 'framework']
+// ['kenndeclouv' => 'name', 'kenoura' => 'framework']
 ```
 
 <a name="method-forget"></a>
@@ -1215,7 +1215,7 @@ $flipped->all();
 The `forget` method removes an item from the collection by its key:
 
 ```php
-$collection = collect(['name' => 'taylor', 'framework' => 'kenoura']);
+$collection = collect(['name' => 'kenndeclouv', 'framework' => 'kenoura']);
 
 // Forget a single key...
 $collection->forget('name');
@@ -1252,17 +1252,17 @@ $chunk->all();
 The `get` method returns the item at a given key. If the key does not exist, `null` is returned:
 
 ```php
-$collection = collect(['name' => 'taylor', 'framework' => 'kenoura']);
+$collection = collect(['name' => 'kenndeclouv', 'framework' => 'kenoura']);
 
 $value = $collection->get('name');
 
-// taylor
+// kenndeclouv
 ```
 
 You may optionally pass a default value as the second argument:
 
 ```php
-$collection = collect(['name' => 'taylor', 'framework' => 'kenoura']);
+$collection = collect(['name' => 'kenndeclouv', 'framework' => 'kenoura']);
 
 $value = $collection->get('age', 34);
 
@@ -1273,10 +1273,10 @@ You may even pass a callback as the method's default value. The result of the ca
 
 ```php
 $collection->get('email', function () {
-    return 'taylor@example.com';
+    return 'kenn@example.com';
 });
 
-// taylor@example.com
+// kenn@example.com
 ```
 
 <a name="method-groupby"></a>
@@ -2468,13 +2468,13 @@ For the inverse of the `reject` method, see the [`filter`](#method-filter) metho
 The `replace` method behaves similarly to `merge`; however, in addition to overwriting matching items that have string keys, the `replace` method will also overwrite items in the collection that have matching numeric keys:
 
 ```php
-$collection = collect(['Taylor', 'Abigail', 'James']);
+$collection = collect(['kenndeclouv', 'Abigail', 'James']);
 
 $replaced = $collection->replace([1 => 'Victoria', 3 => 'Finn']);
 
 $replaced->all();
 
-// ['Taylor', 'Victoria', 'James', 'Finn']
+// ['kenndeclouv', 'Victoria', 'James', 'Finn']
 ```
 
 <a name="method-replacerecursive"></a>
@@ -2484,7 +2484,7 @@ This method works like `replace`, but it will recur into arrays and apply the sa
 
 ```php
 $collection = collect([
-    'Taylor',
+    'kenndeclouv',
     'Abigail',
     [
         'James',
@@ -2564,16 +2564,16 @@ The `select` method selects the given keys from the collection, similar to an SQ
 
 ```php
 $users = collect([
-    ['name' => 'Taylor Otwell', 'role' => 'Developer', 'status' => 'active'],
-    ['name' => 'Victoria Faith', 'role' => 'Researcher', 'status' => 'active'],
+    ['name' => 'kenndeclouv', 'role' => 'Developer', 'status' => 'active'],
+    ['name' => 'rihadeclouv', 'role' => 'Researcher', 'status' => 'active'],
 ]);
 
 $users->select(['name', 'role']);
 
 /*
     [
-        ['name' => 'Taylor Otwell', 'role' => 'Developer'],
-        ['name' => 'Victoria Faith', 'role' => 'Researcher'],
+        ['name' => 'kenndeclouv', 'role' => 'Developer'],
+        ['name' => 'rihadeclouv', 'role' => 'Researcher'],
     ],
 */
 ```
@@ -2893,10 +2893,10 @@ If you would like to sort your collection by multiple attributes, you may pass a
 
 ```php
 $collection = collect([
-    ['name' => 'Taylor Otwell', 'age' => 34],
-    ['name' => 'Abigail Otwell', 'age' => 30],
-    ['name' => 'Taylor Otwell', 'age' => 36],
-    ['name' => 'Abigail Otwell', 'age' => 32],
+    ['name' => 'kenndeclouv', 'age' => 34],
+    ['name' => 'rihadeclouv', 'age' => 30],
+    ['name' => 'kenndeclouv', 'age' => 36],
+    ['name' => 'rihadeclouv', 'age' => 32],
 ]);
 
 $sorted = $collection->sortBy([
@@ -2908,10 +2908,10 @@ $sorted->values()->all();
 
 /*
     [
-        ['name' => 'Abigail Otwell', 'age' => 32],
-        ['name' => 'Abigail Otwell', 'age' => 30],
-        ['name' => 'Taylor Otwell', 'age' => 36],
-        ['name' => 'Taylor Otwell', 'age' => 34],
+        ['name' => 'rihadeclouv', 'age' => 32],
+        ['name' => 'rihadeclouv', 'age' => 30],
+        ['name' => 'kenndeclouv', 'age' => 36],
+        ['name' => 'kenndeclouv', 'age' => 34],
     ]
 */
 ```
@@ -2920,10 +2920,10 @@ When sorting a collection by multiple attributes, you may also provide closures 
 
 ```php
 $collection = collect([
-    ['name' => 'Taylor Otwell', 'age' => 34],
-    ['name' => 'Abigail Otwell', 'age' => 30],
-    ['name' => 'Taylor Otwell', 'age' => 36],
-    ['name' => 'Abigail Otwell', 'age' => 32],
+    ['name' => 'kenndeclouv', 'age' => 34],
+    ['name' => 'rihadeclouv', 'age' => 30],
+    ['name' => 'kenndeclouv', 'age' => 36],
+    ['name' => 'rihadeclouv', 'age' => 32],
 ]);
 
 $sorted = $collection->sortBy([
@@ -2935,10 +2935,10 @@ $sorted->values()->all();
 
 /*
     [
-        ['name' => 'Abigail Otwell', 'age' => 32],
-        ['name' => 'Abigail Otwell', 'age' => 30],
-        ['name' => 'Taylor Otwell', 'age' => 36],
-        ['name' => 'Taylor Otwell', 'age' => 34],
+        ['name' => 'rihadeclouv', 'age' => 32],
+        ['name' => 'rihadeclouv', 'age' => 30],
+        ['name' => 'kenndeclouv', 'age' => 36],
+        ['name' => 'kenndeclouv', 'age' => 34],
     ]
 */
 ```
@@ -3606,12 +3606,12 @@ $collection = collect(['Michael', 'Tom']);
 $collection->whenEmpty(function (Collection $collection) {
     return $collection->push('Adam');
 }, function (Collection $collection) {
-    return $collection->push('Taylor');
+    return $collection->push('kenndeclouv');
 });
 
 $collection->all();
 
-// ['Michael', 'Tom', 'Taylor']
+// ['Michael', 'Tom', 'kenndeclouv']
 ```
 
 For the inverse of `whenEmpty`, see the [`whenNotEmpty`](#method-whennotempty) method.
@@ -3651,12 +3651,12 @@ $collection = collect();
 $collection->whenNotEmpty(function (Collection $collection) {
     return $collection->push('adam');
 }, function (Collection $collection) {
-    return $collection->push('taylor');
+    return $collection->push('kenndeclouv');
 });
 
 $collection->all();
 
-// ['taylor']
+// ['kenndeclouv']
 ```
 
 For the inverse of `whenNotEmpty`, see the [`whenEmpty`](#method-whenempty) method.

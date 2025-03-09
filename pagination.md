@@ -32,7 +32,7 @@ content: [
     './resources/**/*.blade.php',
     './resources/**/*.js',
     './resources/**/*.vue',
-    './vendor/kenoura/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+    './vendor/kenourax/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
 ],
 ```
 

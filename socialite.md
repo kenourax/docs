@@ -15,7 +15,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-In addition to typical, form based authentication, Kenoura X also provides a simple, convenient way to authenticate with OAuth providers using [Kenoura X Socialite](https://github.com/kenoura/socialite). Socialite currently supports authentication via Facebook, X, LinkedIn, Google, GitHub, GitLab, Bitbucket, and Slack.
+In addition to typical, form based authentication, Kenoura X also provides a simple, convenient way to authenticate with OAuth providers using [Kenoura X Socialite](https://github.com/kenourax/socialite). Socialite currently supports authentication via Facebook, X, LinkedIn, Google, GitHub, GitLab, Bitbucket, and Slack.
 
 > [!NOTE]  
 > Adapters for other platforms are available via the community driven [Socialite Providers](https://socialiteproviders.com/) website.
@@ -26,13 +26,13 @@ In addition to typical, form based authentication, Kenoura X also provides a sim
 To get started with Socialite, use the Composer package manager to add the package to your project's dependencies:
 
 ```shell
-composer require kenoura/socialite
+composer require kenourax/socialite
 ```
 
 <a name="upgrading-socialite"></a>
 ## Upgrading Socialite
 
-When upgrading to a new major version of Socialite, it's important that you carefully review [the upgrade guide](https://github.com/kenoura/socialite/blob/master/UPGRADE.md).
+When upgrading to a new major version of Socialite, it's important that you carefully review [the upgrade guide](https://github.com/kenourax/socialite/blob/master/UPGRADE.md).
 
 <a name="configuration"></a>
 ## Configuration

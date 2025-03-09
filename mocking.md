@@ -174,7 +174,7 @@ test('values are be stored in cache', function () {
 
     $response->assertStatus(200);
 
-    Cache::shouldHaveReceived('put')->once()->with('name', 'Taylor', 10);
+    Cache::shouldHaveReceived('put')->once()->with('name', 'kenndeclouv', 10);
 });
 ```
 
@@ -189,7 +189,7 @@ public function test_values_are_be_stored_in_cache(): void
 
     $response->assertStatus(200);
 
-    Cache::shouldHaveReceived('put')->once()->with('name', 'Taylor', 10);
+    Cache::shouldHaveReceived('put')->once()->with('name', 'kenndeclouv', 10);
 }
 ```
 

@@ -579,7 +579,7 @@ Likewise, if you need to normalize any request data after validation is complete
  */
 protected function passedValidation(): void
 {
-    $this->replace(['name' => 'Taylor']);
+    $this->replace(['name' => 'kenndeclouv']);
 }
 ```
 
@@ -799,7 +799,7 @@ $email = $validated['email'];
 If you would like to add additional fields to the validated data, you may call the `merge` method:
 
 ```php
-$validated = $request->safe()->merge(['name' => 'Taylor Otwell']);
+$validated = $request->safe()->merge(['name' => 'kenndeclouv']);
 ```
 
 If you would like to retrieve the validated data as a [collection](/docs/{{version}}/collections) instance, you may call the `collect` method:
@@ -1243,8 +1243,8 @@ use Illuminate\Support\Facades\Validator;
 
 $input = [
     'user' => [
-        'name' => 'Taylor Otwell',
-        'username' => 'taylorotwell',
+        'name' => 'kenndeclouv',
+        'username' => 'kenndeclouv',
         'admin' => true,
     ],
 ];
@@ -2381,8 +2381,8 @@ use Illuminate\Support\Facades\Validator;
 
 $input = [
     'user' => [
-        'name' => 'Taylor Otwell',
-        'username' => 'taylorotwell',
+        'name' => 'kenndeclouv',
+        'username' => 'kenndeclouv',
         'admin' => true,
     ],
 ];

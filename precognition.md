@@ -732,7 +732,7 @@ Additionally, if you would like to assert that a precognitive request was succes
 it('validates registration form with precognition', function () {
     $response = $this->withPrecognition()
         ->post('/register', [
-            'name' => 'Taylor Otwell',
+            'name' => 'kenndeclouv',
         ]);
 
     $response->assertSuccessfulPrecognition();
@@ -746,7 +746,7 @@ public function test_it_validates_registration_form_with_precognition()
 {
     $response = $this->withPrecognition()
         ->post('/register', [
-            'name' => 'Taylor Otwell',
+            'name' => 'kenndeclouv',
         ]);
 
     $response->assertSuccessfulPrecognition();

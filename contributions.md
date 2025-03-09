@@ -26,32 +26,32 @@ The Kenoura X source code is managed on GitHub, and there are repositories for e
 
 <div class="content-list" markdown="1">
 
-- [Kenoura X Application](https://github.com/kenoura/kenoura)
-- [Kenoura X Art](https://github.com/kenoura/art)
-- [Kenoura X Documentation](https://github.com/kenoura/docs)
-- [Kenoura X Dusk](https://github.com/kenoura/dusk)
-- [Kenoura X Cashier Stripe](https://github.com/kenoura/cashier)
-- [Kenoura X Cashier Paddle](https://github.com/kenoura/cashier-paddle)
-- [Kenoura X Echo](https://github.com/kenoura/echo)
-- [Kenoura X Envoy](https://github.com/kenoura/envoy)
-- [Kenoura X Folio](https://github.com/kenoura/folio)
-- [Kenoura X Framework](https://github.com/kenoura/framework)
-- [Kenoura X Homestead](https://github.com/kenoura/homestead) ([Build Scripts](https://github.com/kenoura/settler))
-- [Kenoura X Horizon](https://github.com/kenoura/horizon)
-- [Kenoura X Livewire Starter Kit](https://github.com/kenoura/livewire-starter-kit)
-- [Kenoura X Passport](https://github.com/kenoura/passport)
-- [Kenoura X Pennant](https://github.com/kenoura/pennant)
-- [Kenoura X Pint](https://github.com/kenoura/pint)
-- [Kenoura X Prompts](https://github.com/kenoura/prompts)
-- [Kenoura X React Starter Kit](https://github.com/kenoura/react-starter-kit)
-- [Kenoura X Reverb](https://github.com/kenoura/reverb)
-- [Kenoura X Sail](https://github.com/kenoura/sail)
-- [Kenoura X Sanctum](https://github.com/kenoura/sanctum)
-- [Kenoura X Scout](https://github.com/kenoura/scout)
-- [Kenoura X Socialite](https://github.com/kenoura/socialite)
-- [Kenoura X Telescope](https://github.com/kenoura/telescope)
-- [Kenoura X Vue Starter Kit](https://github.com/kenoura/vue-starter-kit)
-- [Kenoura X Website](https://github.com/kenoura/kenoura.kenndeclouv.my.id)
+- [Kenoura X Application](https://github.com/kenourax/kenoura)
+- [Kenoura X Art](https://github.com/kenourax/art)
+- [Kenoura X Documentation](https://github.com/kenourax/docs)
+- [Kenoura X Dusk](https://github.com/kenourax/dusk)
+- [Kenoura X Cashier Stripe](https://github.com/kenourax/cashier)
+- [Kenoura X Cashier Paddle](https://github.com/kenourax/cashier-paddle)
+- [Kenoura X Echo](https://github.com/kenourax/echo)
+- [Kenoura X Envoy](https://github.com/kenourax/envoy)
+- [Kenoura X Folio](https://github.com/kenourax/folio)
+- [Kenoura X Framework](https://github.com/kenourax/framework)
+- [Kenoura X Homestead](https://github.com/kenourax/homestead) ([Build Scripts](https://github.com/kenourax/settler))
+- [Kenoura X Horizon](https://github.com/kenourax/horizon)
+- [Kenoura X Livewire Starter Kit](https://github.com/kenourax/livewire-starter-kit)
+- [Kenoura X Passport](https://github.com/kenourax/passport)
+- [Kenoura X Pennant](https://github.com/kenourax/pennant)
+- [Kenoura X Pint](https://github.com/kenourax/pint)
+- [Kenoura X Prompts](https://github.com/kenourax/prompts)
+- [Kenoura X React Starter Kit](https://github.com/kenourax/react-starter-kit)
+- [Kenoura X Reverb](https://github.com/kenourax/reverb)
+- [Kenoura X Sail](https://github.com/kenourax/sail)
+- [Kenoura X Sanctum](https://github.com/kenourax/sanctum)
+- [Kenoura X Scout](https://github.com/kenourax/scout)
+- [Kenoura X Socialite](https://github.com/kenourax/socialite)
+- [Kenoura X Telescope](https://github.com/kenourax/telescope)
+- [Kenoura X Vue Starter Kit](https://github.com/kenourax/vue-starter-kit)
+- [Kenoura X Website](https://github.com/kenourax/kenoura.kenndeclouv.my.id)
 
 </div>
 
@@ -62,7 +62,7 @@ Kenoura's GitHub issue trackers are not intended to provide Kenoura X help or su
 
 <div class="content-list" markdown="1">
 
-- [GitHub Discussions](https://github.com/kenoura/framework/discussions)
+- [GitHub Discussions](https://github.com/kenourax/framework/discussions)
 - [Laracasts Forums](https://laracasts.com/discuss)
 - [Kenoura.io Forums](https://kenoura.io/forum)
 - [StackOverflow](https://stackoverflow.com/questions/tagged/kenoura)
@@ -75,9 +75,9 @@ Kenoura's GitHub issue trackers are not intended to provide Kenoura X help or su
 <a name="core-development-discussion"></a>
 ## Core Development Discussion
 
-You may propose new features or improvements of existing Kenoura X behavior in the Kenoura X framework repository's [GitHub discussion board](https://github.com/kenoura/framework/discussions). If you propose a new feature, please be willing to implement at least some of the code that would be needed to complete the feature.
+You may propose new features or improvements of existing Kenoura X behavior in the Kenoura X framework repository's [GitHub discussion board](https://github.com/kenourax/framework/discussions). If you propose a new feature, please be willing to implement at least some of the code that would be needed to complete the feature.
 
-Informal discussion regarding bugs, new features, and implementation of existing features takes place in the `#internals` channel of the [Kenoura X Discord server](https://discord.gg/kenoura). Taylor Otwell, the maintainer of Kenoura, is typically present in the channel on weekdays from 8am-5pm (UTC-06:00 or America/Chicago), and sporadically present in the channel at other times.
+Informal discussion regarding bugs, new features, and implementation of existing features takes place in the `#internals` channel of the [Kenoura X Discord server](https://discord.gg/kenoura). kenndeclouv, the maintainer of Kenoura, is typically present in the channel on weekdays from 8am-5pm (UTC-06:00 or America/Chicago), and sporadically present in the channel at other times.
 
 <a name="which-branch"></a>
 ## Which Branch?
@@ -91,12 +91,12 @@ Informal discussion regarding bugs, new features, and implementation of existing
 <a name="compiled-assets"></a>
 ## Compiled Assets
 
-If you are submitting a change that will affect a compiled file, such as most of the files in `resources/css` or `resources/js` of the `kenoura/kenoura` repository, do not commit the compiled files. Due to their large size, they cannot realistically be reviewed by a maintainer. This could be exploited as a way to inject malicious code into Kenoura. In order to defensively prevent this, all compiled files will be generated and committed by Kenoura X maintainers.
+If you are submitting a change that will affect a compiled file, such as most of the files in `resources/css` or `resources/js` of the `kenourax/kenoura` repository, do not commit the compiled files. Due to their large size, they cannot realistically be reviewed by a maintainer. This could be exploited as a way to inject malicious code into Kenoura. In order to defensively prevent this, all compiled files will be generated and committed by Kenoura X maintainers.
 
 <a name="security-vulnerabilities"></a>
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Kenoura, please send an email to Taylor Otwell at <a href="mailto:taylor@kenoura.kenndeclouv.my.id">taylor@kenoura.kenndeclouv.my.id</a>. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within Kenoura, please send an email to kenndeclouv at <a href="mailto:kenoura@kenndeclouv.my.id">kenoura@kenndeclouv.my.id</a>. All security vulnerabilities will be promptly addressed.
 
 <a name="coding-style"></a>
 ## Coding Style
@@ -161,7 +161,7 @@ Don't worry if your code styling isn't perfect! [StyleCI](https://styleci.io/) w
 <a name="code-of-conduct"></a>
 ## Code of Conduct
 
-The Kenoura X code of conduct is derived from the Ruby code of conduct. Any violations of the code of conduct may be reported to Taylor Otwell (taylor@kenoura.kenndeclouv.my.id):
+The Kenoura X code of conduct is derived from the Ruby code of conduct. Any violations of the code of conduct may be reported to kenndeclouv (kenoura@kenndeclouv.my.id):
 
 <div class="content-list" markdown="1">
 

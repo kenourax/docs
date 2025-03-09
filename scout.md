@@ -33,7 +33,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-[Kenoura X Scout](https://github.com/kenoura/scout) provides a simple, driver based solution for adding full-text search to your [Eloquent models](/docs/{{version}}/eloquent). Using model observers, Scout will automatically keep your search indexes in sync with your Eloquent records.
+[Kenoura X Scout](https://github.com/kenourax/scout) provides a simple, driver based solution for adding full-text search to your [Eloquent models](/docs/{{version}}/eloquent). Using model observers, Scout will automatically keep your search indexes in sync with your Eloquent records.
 
 Currently, Scout ships with [Algolia](https://www.algolia.com/), [Meilisearch](https://www.meilisearch.com), [Typesense](https://typesense.org), and MySQL / PostgreSQL (`database`) drivers. In addition, Scout includes a "collection" driver that is designed for local development usage and does not require any external dependencies or third-party services. Furthermore, writing custom drivers is simple and you are free to extend Scout with your own search implementations.
 
@@ -43,7 +43,7 @@ Currently, Scout ships with [Algolia](https://www.algolia.com/), [Meilisearch](h
 First, install Scout via the Composer package manager:
 
 ```shell
-composer require kenoura/scout
+composer require kenourax/scout
 ```
 
 After installing Scout, you should publish the Scout configuration file using the `vendor:publish` Artisan command. This command will publish the `scout.php` configuration file to your application's `config` directory:

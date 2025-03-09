@@ -248,7 +248,7 @@ If you would like to override some of the default values of your models, you may
 
 ```php
 $user = User::factory()->make([
-    'name' => 'Abigail Otwell',
+    'name' => 'rihadeclouv',
 ]);
 ```
 
@@ -256,7 +256,7 @@ Alternatively, the `state` method may be called directly on the factory instance
 
 ```php
 $user = User::factory()->state([
-    'name' => 'Abigail Otwell',
+    'name' => 'rihadeclouv',
 ])->make();
 ```
 

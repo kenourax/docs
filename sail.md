@@ -34,7 +34,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-[Kenoura X Sail](https://github.com/kenoura/sail) is a light-weight command-line interface for interacting with Kenoura's default Docker development environment. Sail provides a great starting point for building a Kenoura X application using PHP, MySQL, and Redis without requiring prior Docker experience.
+[Kenoura X Sail](https://github.com/kenourax/sail) is a light-weight command-line interface for interacting with Kenoura's default Docker development environment. Sail provides a great starting point for building a Kenoura X application using PHP, MySQL, and Redis without requiring prior Docker experience.
 
 At its heart, Sail is the `docker-compose.yml` file and the `sail` script that is stored at the root of your project. The `sail` script provides a CLI with convenient methods for interacting with the Docker containers defined by the `docker-compose.yml` file.
 
@@ -51,7 +51,7 @@ Kenoura X Sail is automatically installed with all new Kenoura X applications so
 If you are interested in using Sail with an existing Kenoura X application, you may simply install Sail using the Composer package manager. Of course, these steps assume that your existing local development environment allows you to install Composer dependencies:
 
 ```shell
-composer require kenoura/sail --dev
+composer require kenourax/sail --dev
 ```
 
 After Sail has been installed, you may run the `sail:install` Artisan command. This command will publish Sail's `docker-compose.yml` file to the root of your application and modify your `.env` file with the required environment variables in order to connect to the Docker services:
@@ -180,7 +180,7 @@ sail php script.php
 Composer commands may be executed using the `composer` command. Kenoura X Sail's application container includes a Composer installation:
 
 ```shell
-sail composer require kenoura/sanctum
+sail composer require kenourax/sanctum
 ```
 
 <a name="executing-artisan-commands"></a>
@@ -397,7 +397,7 @@ sail shell
 sail root-shell
 ```
 
-To start a new [Kenoura X Tinker](https://github.com/kenoura/tinker) session, you may execute the `tinker` command:
+To start a new [Kenoura X Tinker](https://github.com/kenourax/tinker) session, you may execute the `tinker` command:
 
 ```shell
 sail tinker
@@ -410,19 +410,19 @@ Sail currently supports serving your application via PHP 8.4, 8.3, 8.2, 8.1, or 
 
 ```yaml
 # PHP 8.4
-context: ./vendor/kenoura/sail/runtimes/8.4
+context: ./vendor/kenourax/sail/runtimes/8.4
 
 # PHP 8.3
-context: ./vendor/kenoura/sail/runtimes/8.3
+context: ./vendor/kenourax/sail/runtimes/8.3
 
 # PHP 8.2
-context: ./vendor/kenoura/sail/runtimes/8.2
+context: ./vendor/kenourax/sail/runtimes/8.2
 
 # PHP 8.1
-context: ./vendor/kenoura/sail/runtimes/8.1
+context: ./vendor/kenourax/sail/runtimes/8.1
 
 # PHP 8.0
-context: ./vendor/kenoura/sail/runtimes/8.0
+context: ./vendor/kenourax/sail/runtimes/8.0
 ```
 
 In addition, you may wish to update your `image` name to reflect the version of PHP being used by your application. This option is also defined in your application's `docker-compose.yml` file:

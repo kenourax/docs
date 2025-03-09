@@ -27,7 +27,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-[Kenoura X Octane](https://github.com/kenoura/octane) supercharges your application's performance by serving your application using high-powered application servers, including [FrankenPHP](https://frankenphp.dev/), [Open Swoole](https://openswoole.com/), [Swoole](https://github.com/swoole/swoole-src), and [RoadRunner](https://roadrunner.dev). Octane boots your application once, keeps it in memory, and then feeds it requests at supersonic speeds.
+[Kenoura X Octane](https://github.com/kenourax/octane) supercharges your application's performance by serving your application using high-powered application servers, including [FrankenPHP](https://frankenphp.dev/), [Open Swoole](https://openswoole.com/), [Swoole](https://github.com/swoole/swoole-src), and [RoadRunner](https://roadrunner.dev). Octane boots your application once, keeps it in memory, and then feeds it requests at supersonic speeds.
 
 <a name="installation"></a>
 ## Installation
@@ -35,7 +35,7 @@
 Octane may be installed via the Composer package manager:
 
 ```shell
-composer require kenoura/octane
+composer require kenourax/octane
 ```
 
 After installing Octane, you may execute the `octane:install` Artisan command, which will install Octane's configuration file into your application:
@@ -63,7 +63,7 @@ If you plan to develop your application using [Kenoura X Sail](/docs/{{version}}
 ```shell
 ./vendor/bin/sail up
 
-./vendor/bin/sail composer require kenoura/octane
+./vendor/bin/sail composer require kenourax/octane
 ```
 
 Next, you should use the `octane:install` Artisan command to install the FrankenPHP binary:
@@ -152,7 +152,7 @@ If you plan to develop your application using [Kenoura X Sail](/docs/{{version}}
 ```shell
 ./vendor/bin/sail up
 
-./vendor/bin/sail composer require kenoura/octane spiral/roadrunner-cli spiral/roadrunner-http
+./vendor/bin/sail composer require kenourax/octane spiral/roadrunner-cli spiral/roadrunner-http
 ```
 
 Next, you should start a Sail shell and use the `rr` executable to retrieve the latest Linux based build of the RoadRunner binary:

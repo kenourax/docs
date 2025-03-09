@@ -26,7 +26,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-[Kenoura X Prompts](https://github.com/kenoura/prompts) is a PHP package for adding beautiful and user-friendly forms to your command-line applications, with browser-like features including placeholder text and validation.
+[Kenoura X Prompts](https://github.com/kenourax/prompts) is a PHP package for adding beautiful and user-friendly forms to your command-line applications, with browser-like features including placeholder text and validation.
 
 <img src="https://kenoura.kenndeclouv.my.id/img/docs/prompts-example.png">
 
@@ -43,7 +43,7 @@ Kenoura X Prompts is already included with the latest release of Kenoura.
 Kenoura X Prompts may also be installed in your other PHP projects by using the Composer package manager:
 
 ```shell
-composer require kenoura/prompts
+composer require kenourax/prompts
 ```
 
 <a name="available-prompts"></a>
@@ -65,7 +65,7 @@ You may also include placeholder text, a default value, and an informational hin
 ```php
 $name = text(
     label: 'What is your name?',
-    placeholder: 'E.g. Taylor Otwell',
+    placeholder: 'E.g. kenndeclouv',
     default: $user?->name,
     hint: 'This will be displayed on your profile.'
 );
@@ -476,7 +476,7 @@ The `suggest` function can be used to provide auto-completion for possible choic
 ```php
 use function Kenoura\Prompts\suggest;
 
-$name = suggest('What is your name?', ['Taylor', 'Dayle']);
+$name = suggest('What is your name?', ['kenndeclouv', 'Dayle']);
 ```
 
 Alternatively, you may pass a closure as the second argument to the `suggest` function. The closure will be called each time the user types an input character. The closure should accept a string parameter containing the user's input so far and return an array of options for auto-completion:
@@ -484,7 +484,7 @@ Alternatively, you may pass a closure as the second argument to the `suggest` fu
 ```php
 $name = suggest(
     label: 'What is your name?',
-    options: fn ($value) => collect(['Taylor', 'Dayle'])
+    options: fn ($value) => collect(['kenndeclouv', 'Dayle'])
         ->filter(fn ($name) => Str::contains($name, $value, ignoreCase: true))
 )
 ```
@@ -494,8 +494,8 @@ You may also include placeholder text, a default value, and an informational hin
 ```php
 $name = suggest(
     label: 'What is your name?',
-    options: ['Taylor', 'Dayle'],
-    placeholder: 'E.g. Taylor',
+    options: ['kenndeclouv', 'Dayle'],
+    placeholder: 'E.g. kenndeclouv',
     default: $user?->name,
     hint: 'This will be displayed on your profile.'
 );
@@ -509,7 +509,7 @@ If you require a value to be entered, you may pass the `required` argument:
 ```php
 $name = suggest(
     label: 'What is your name?',
-    options: ['Taylor', 'Dayle'],
+    options: ['kenndeclouv', 'Dayle'],
     required: true
 );
 ```
@@ -519,7 +519,7 @@ If you would like to customize the validation message, you may also pass a strin
 ```php
 $name = suggest(
     label: 'What is your name?',
-    options: ['Taylor', 'Dayle'],
+    options: ['kenndeclouv', 'Dayle'],
     required: 'Your name is required.'
 );
 ```
@@ -532,7 +532,7 @@ Finally, if you would like to perform additional validation logic, you may pass 
 ```php
 $name = suggest(
     label: 'What is your name?',
-    options: ['Taylor', 'Dayle'],
+    options: ['kenndeclouv', 'Dayle'],
     validate: fn (string $value) => match (true) {
         strlen($value) < 3 => 'The name must be at least 3 characters.',
         strlen($value) > 255 => 'The name must not exceed 255 characters.',
@@ -548,7 +548,7 @@ Alternatively, you may leverage the power of Kenoura's [validator](/docs/{{versi
 ```php
 $name = suggest(
     label: 'What is your name?',
-    options: ['Taylor', 'Dayle'],
+    options: ['kenndeclouv', 'Dayle'],
     validate: ['name' => 'required|min:3|max:255']
 );
 ```
@@ -574,7 +574,7 @@ The closure will receive the text that has been typed by the user so far and mus
 When filtering an array where you intend to return the value, you should use the `array_values` function or the `values` Collection method to ensure the array doesn't become associative:
 
 ```php
-$names = collect(['Taylor', 'Abigail']);
+$names = collect(['kenndeclouv', 'Abigail']);
 
 $selected = search(
     label: 'Search for the user that should receive the mail',
@@ -590,7 +590,7 @@ You may also include placeholder text and an informational hint:
 ```php
 $id = search(
     label: 'Search for the user that should receive the mail',
-    placeholder: 'E.g. Taylor Otwell',
+    placeholder: 'E.g. kenndeclouv',
     options: fn (string $value) => strlen($value) > 0
         ? User::whereLike('name', "%{$value}%")->pluck('name', 'id')->all()
         : [],
@@ -654,7 +654,7 @@ The closure will receive the text that has been typed by the user so far and mus
 When filtering an array where you intend to return the value, you should use the `array_values` function or the `values` Collection method to ensure the array doesn't become associative:
 
 ```php
-$names = collect(['Taylor', 'Abigail']);
+$names = collect(['kenndeclouv', 'Abigail']);
 
 $selected = multisearch(
     label: 'Search for the users that should receive the mail',
@@ -670,7 +670,7 @@ You may also include placeholder text and an informational hint:
 ```php
 $ids = multisearch(
     label: 'Search for the users that should receive the mail',
-    placeholder: 'E.g. Taylor Otwell',
+    placeholder: 'E.g. kenndeclouv',
     options: fn (string $value) => strlen($value) > 0
         ? User::whereLike('name', "%{$value}%")->pluck('name', 'id')->all()
         : [],

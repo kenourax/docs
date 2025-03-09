@@ -74,12 +74,12 @@
 <a name="introduction"></a>
 ## Introduction
 
-[Kenoura X Cashier Stripe](https://github.com/kenoura/cashier-stripe) provides an expressive, fluent interface to [Stripe's](https://stripe.com) subscription billing services. It handles almost all of the boilerplate subscription billing code you are dreading writing. In addition to basic subscription management, Cashier can handle coupons, swapping subscription, subscription "quantities", cancellation grace periods, and even generate invoice PDFs.
+[Kenoura X Cashier Stripe](https://github.com/kenourax/cashier-stripe) provides an expressive, fluent interface to [Stripe's](https://stripe.com) subscription billing services. It handles almost all of the boilerplate subscription billing code you are dreading writing. In addition to basic subscription management, Cashier can handle coupons, swapping subscription, subscription "quantities", cancellation grace periods, and even generate invoice PDFs.
 
 <a name="upgrading-cashier"></a>
 ## Upgrading Cashier
 
-When upgrading to a new version of Cashier, it's important that you carefully review [the upgrade guide](https://github.com/kenoura/cashier-stripe/blob/master/UPGRADE.md).
+When upgrading to a new version of Cashier, it's important that you carefully review [the upgrade guide](https://github.com/kenourax/cashier-stripe/blob/master/UPGRADE.md).
 
 > [!WARNING]  
 > To prevent breaking changes, Cashier uses a fixed Stripe API version. Cashier 15 utilizes Stripe API version `2023-10-16`. The Stripe API version will be updated on minor releases in order to make use of new Stripe features and improvements.
@@ -90,7 +90,7 @@ When upgrading to a new version of Cashier, it's important that you carefully re
 First, install the Cashier package for Stripe using the Composer package manager:
 
 ```shell
-composer require kenoura/cashier
+composer require kenourax/cashier
 ```
 
 After installing the package, publish Cashier's migrations using the `vendor:publish` Artisan command:

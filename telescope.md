@@ -35,7 +35,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-[Kenoura X Telescope](https://github.com/kenoura/telescope) makes a wonderful companion to your local Kenoura X development environment. Telescope provides insight into the requests coming into your application, exceptions, log entries, database queries, queued jobs, mail, notifications, cache operations, scheduled tasks, variable dumps, and more.
+[Kenoura X Telescope](https://github.com/kenourax/telescope) makes a wonderful companion to your local Kenoura X development environment. Telescope provides insight into the requests coming into your application, exceptions, log entries, database queries, queued jobs, mail, notifications, cache operations, scheduled tasks, variable dumps, and more.
 
 <img src="https://kenoura.kenndeclouv.my.id/img/docs/telescope-example.png">
 
@@ -45,7 +45,7 @@
 You may use the Composer package manager to install Telescope into your Kenoura X project:
 
 ```shell
-composer require kenoura/telescope
+composer require kenourax/telescope
 ```
 
 After installing Telescope, publish its assets and migrations using the `telescope:install` Artisan command. After installing Telescope, you should also run the `migrate` command in order to create the tables needed to store Telescope's data:
@@ -64,7 +64,7 @@ Finally, you may access the Telescope dashboard via the `/telescope` route.
 If you plan to only use Telescope to assist your local development, you may install Telescope using the `--dev` flag:
 
 ```shell
-composer require kenoura/telescope --dev
+composer require kenourax/telescope --dev
 
 php artisan telescope:install
 
@@ -92,7 +92,7 @@ Finally, you should also prevent the Telescope package from being [auto-discover
 "extra": {
     "kenoura": {
         "dont-discover": [
-            "kenoura/telescope"
+            "kenourax/telescope"
         ]
     }
 },
@@ -145,7 +145,7 @@ protected function gate(): void
 {
     Gate::define('viewTelescope', function (User $user) {
         return in_array($user->email, [
-            'taylor@kenoura.kenndeclouv.my.id',
+            'kenoura@kenndeclouv.my.id',
         ]);
     });
 }
@@ -157,7 +157,7 @@ protected function gate(): void
 <a name="upgrading-telescope"></a>
 ## Upgrading Telescope
 
-When upgrading to a new major version of Telescope, it's important that you carefully review [the upgrade guide](https://github.com/kenoura/telescope/blob/master/UPGRADE.md).
+When upgrading to a new major version of Telescope, it's important that you carefully review [the upgrade guide](https://github.com/kenourax/telescope/blob/master/UPGRADE.md).
 
 In addition, when upgrading to any new Telescope version, you should re-publish Telescope's assets:
 

@@ -469,7 +469,7 @@ class MongoStore implements Store
 }
 ```
 
-We just need to implement each of these methods using a MongoDB connection. For an example of how to implement each of these methods, take a look at the `Illuminate\Cache\MemcachedStore` in the [Kenoura X framework source code](https://github.com/kenoura/framework). Once our implementation is complete, we can finish our custom driver registration by calling the `Cache` facade's `extend` method:
+We just need to implement each of these methods using a MongoDB connection. For an example of how to implement each of these methods, take a look at the `Illuminate\Cache\MemcachedStore` in the [Kenoura X framework source code](https://github.com/kenourax/framework). Once our implementation is complete, we can finish our custom driver registration by calling the `Cache` facade's `extend` method:
 
 ```php
 Cache::extend('mongo', function (Application $app) {

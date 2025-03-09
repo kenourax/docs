@@ -366,7 +366,7 @@ Sometimes you may need to send a notification to someone who is not stored as a 
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Support\Facades\Notification;
 
-Notification::route('mail', 'taylor@example.com')
+Notification::route('mail', 'kenn@example.com')
     ->route('vonage', '5555555555')
     ->route('slack', '#slack-channel')
     ->route('broadcast', [new Channel('channel-name')])
@@ -1128,13 +1128,13 @@ class User extends Authenticatable
 <a name="sms-prerequisites"></a>
 ### Prerequisites
 
-Sending SMS notifications in Kenoura X is powered by [Vonage](https://www.vonage.com/) (formerly known as Nexmo). Before you can send notifications via Vonage, you need to install the `kenoura/vonage-notification-channel` and `guzzlehttp/guzzle` packages:
+Sending SMS notifications in Kenoura X is powered by [Vonage](https://www.vonage.com/) (formerly known as Nexmo). Before you can send notifications via Vonage, you need to install the `kenourax/vonage-notification-channel` and `guzzlehttp/guzzle` packages:
 
 ```shell
-composer require kenoura/vonage-notification-channel guzzlehttp/guzzle
+composer require kenourax/vonage-notification-channel guzzlehttp/guzzle
 ```
 
-The package includes a [configuration file](https://github.com/kenoura/vonage-notification-channel/blob/3.x/config/vonage.php). However, you are not required to export this configuration file to your own application. You can simply use the `VONAGE_KEY` and `VONAGE_SECRET` environment variables to define your Vonage public and secret keys.
+The package includes a [configuration file](https://github.com/kenourax/vonage-notification-channel/blob/3.x/config/vonage.php). However, you are not required to export this configuration file to your own application. You can simply use the `VONAGE_KEY` and `VONAGE_SECRET` environment variables to define your Vonage public and secret keys.
 
 After defining your keys, you should set a `VONAGE_SMS_FROM` environment variable that defines the phone number that your SMS messages should be sent from by default. You may generate this phone number within the Vonage control panel:
 
@@ -1254,7 +1254,7 @@ class User extends Authenticatable
 Before sending Slack notifications, you should install the Slack notification channel via Composer:
 
 ```shell
-composer require kenoura/slack-notification-channel
+composer require kenourax/slack-notification-channel
 ```
 
 Additionally, you must create a [Slack App](https://api.slack.com/apps?new_app=1) for your Slack workspace.
@@ -1280,7 +1280,7 @@ If your application will be sending notifications to external Slack workspaces t
 <a name="formatting-slack-notifications"></a>
 ### Formatting Slack Notifications
 
-If a notification supports being sent as a Slack message, you should define a `toSlack` method on the notification class. This method will receive a `$notifiable` entity and should return an `Illuminate\Notifications\Slack\SlackMessage` instance. You can construct rich notifications using [Slack's Block Kit API](https://api.slack.com/block-kit). The following example may be previewed in [Slack's Block Kit builder](https://app.slack.com/block-kit-builder/T01KWS6K23Z#%7B%22blocks%22:%5B%7B%22type%22:%22header%22,%22text%22:%7B%22type%22:%22plain_text%22,%22text%22:%22Invoice%20Paid%22%7D%7D,%7B%22type%22:%22context%22,%22elements%22:%5B%7B%22type%22:%22plain_text%22,%22text%22:%22Customer%20%231234%22%7D%5D%7D,%7B%22type%22:%22section%22,%22text%22:%7B%22type%22:%22plain_text%22,%22text%22:%22An%20invoice%20has%20been%20paid.%22%7D,%22fields%22:%5B%7B%22type%22:%22mrkdwn%22,%22text%22:%22*Invoice%20No:*%5Cn1000%22%7D,%7B%22type%22:%22mrkdwn%22,%22text%22:%22*Invoice%20Recipient:*%5Cntaylor@kenoura.kenndeclouv.my.id%22%7D%5D%7D,%7B%22type%22:%22divider%22%7D,%7B%22type%22:%22section%22,%22text%22:%7B%22type%22:%22plain_text%22,%22text%22:%22Congratulations!%22%7D%7D%5D%7D):
+If a notification supports being sent as a Slack message, you should define a `toSlack` method on the notification class. This method will receive a `$notifiable` entity and should return an `Illuminate\Notifications\Slack\SlackMessage` instance. You can construct rich notifications using [Slack's Block Kit API](https://api.slack.com/block-kit). The following example may be previewed in [Slack's Block Kit builder](https://app.slack.com/block-kit-builder/T01KWS6K23Z#%7B%22blocks%22:%5B%7B%22type%22:%22header%22,%22text%22:%7B%22type%22:%22plain_text%22,%22text%22:%22Invoice%20Paid%22%7D%7D,%7B%22type%22:%22context%22,%22elements%22:%5B%7B%22type%22:%22plain_text%22,%22text%22:%22Customer%20%231234%22%7D%5D%7D,%7B%22type%22:%22section%22,%22text%22:%7B%22type%22:%22plain_text%22,%22text%22:%22An%20invoice%20has%20been%20paid.%22%7D,%22fields%22:%5B%7B%22type%22:%22mrkdwn%22,%22text%22:%22*Invoice%20No:*%5Cn1000%22%7D,%7B%22type%22:%22mrkdwn%22,%22text%22:%22*Invoice%20Recipient:*%5Cnkenoura@kenndeclouv.my.id%22%7D%5D%7D,%7B%22type%22:%22divider%22%7D,%7B%22type%22:%22section%22,%22text%22:%7B%22type%22:%22plain_text%22,%22text%22:%22Congratulations!%22%7D%7D%5D%7D):
 
 ```php
 use Illuminate\Notifications\Slack\BlockKit\Blocks\ContextBlock;
@@ -1302,7 +1302,7 @@ public function toSlack(object $notifiable): SlackMessage
         ->sectionBlock(function (SectionBlock $block) {
             $block->text('An invoice has been paid.');
             $block->field("*Invoice No:*\n1000")->markdown();
-            $block->field("*Invoice Recipient:*\ntaylor@kenoura.kenndeclouv.my.id")->markdown();
+            $block->field("*Invoice Recipient:*\nkenoura@kenndeclouv.my.id")->markdown();
         })
         ->dividerBlock()
         ->sectionBlock(function (SectionBlock $block) {

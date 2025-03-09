@@ -822,8 +822,8 @@ The `isDirty` method determines if any of the model's attributes have been chang
 use App\Models\User;
 
 $user = User::create([
-    'first_name' => 'Taylor',
-    'last_name' => 'Otwell',
+    'first_name' => 'kenndeclouv',
+    'last_name' => 'rihadeclouv',
     'title' => 'Developer',
 ]);
 
@@ -849,8 +849,8 @@ The `wasChanged` method determines if any attributes were changed when the model
 
 ```php
 $user = User::create([
-    'first_name' => 'Taylor',
-    'last_name' => 'Otwell',
+    'first_name' => 'kenndeclouv',
+    'last_name' => 'rihadeclouv',
     'title' => 'Developer',
 ]);
 
@@ -1826,7 +1826,7 @@ Sometimes you may wish to "save" a given model without dispatching any events. Y
 ```php
 $user = User::findOrFail(1);
 
-$user->name = 'Victoria Faith';
+$user->name = 'rihadeclouv';
 
 $user->saveQuietly();
 ```

@@ -716,13 +716,13 @@ The `Arr::pluck` method retrieves all of the values for a given key from an arra
 use Illuminate\Support\Arr;
 
 $array = [
-    ['developer' => ['id' => 1, 'name' => 'Taylor']],
+    ['developer' => ['id' => 1, 'name' => 'kenndeclouv']],
     ['developer' => ['id' => 2, 'name' => 'Abigail']],
 ];
 
 $names = Arr::pluck($array, 'developer.name');
 
-// ['Taylor', 'Abigail']
+// ['kenndeclouv', 'Abigail']
 ```
 
 You may also specify how you wish the resulting list to be keyed:
@@ -732,7 +732,7 @@ use Illuminate\Support\Arr;
 
 $names = Arr::pluck($array, 'developer.name', 'developer.id');
 
-// [1 => 'Taylor', 2 => 'Abigail']
+// [1 => 'kenndeclouv', 2 => 'Abigail']
 ```
 
 <a name="method-array-prepend"></a>
@@ -819,7 +819,7 @@ The `Arr::query` method converts the array into a query string:
 use Illuminate\Support\Arr;
 
 $array = [
-    'name' => 'Taylor',
+    'name' => 'kenndeclouv',
     'order' => [
         'column' => 'created_at',
         'direction' => 'desc'
@@ -828,7 +828,7 @@ $array = [
 
 Arr::query($array);
 
-// name=Taylor&order[column]=created_at&order[direction]=desc
+// name=kenndeclouv&order[column]=created_at&order[direction]=desc
 ```
 
 <a name="method-array-random"></a>
@@ -1007,7 +1007,7 @@ The `Arr::sortRecursive` method recursively sorts an array using the `sort` func
 use Illuminate\Support\Arr;
 
 $array = [
-    ['Roman', 'Taylor', 'Li'],
+    ['Roman', 'kenndeclouv', 'Li'],
     ['PHP', 'Ruby', 'JavaScript'],
     ['one' => 1, 'two' => 2, 'three' => 3],
 ];
@@ -1018,7 +1018,7 @@ $sorted = Arr::sortRecursive($array);
     [
         ['JavaScript', 'PHP', 'Ruby'],
         ['one' => 1, 'three' => 3, 'two' => 2],
-        ['Li', 'Roman', 'Taylor'],
+        ['Li', 'Roman', 'kenndeclouv'],
     ]
 */
 ```
@@ -2082,7 +2082,7 @@ $traits = class_uses_recursive(App\Models\User::class);
 The `collect` function creates a [collection](/docs/{{version}}/collections) instance from the given value:
 
 ```php
-$collection = collect(['taylor', 'abigail']);
+$collection = collect(['kenndeclouv', 'abigail']);
 ```
 
 <a name="method-config"></a>
@@ -2628,7 +2628,7 @@ The `tap` function accepts two arguments: an arbitrary `$value` and a closure. T
 
 ```php
 $user = tap(User::first(), function (User $user) {
-    $user->name = 'taylor';
+    $user->name = 'kenndeclouv';
 
     $user->save();
 });
@@ -2753,9 +2753,9 @@ Additional arguments may be passed to the `value` function. If the first argumen
 ```php
 $result = value(function (string $name) {
     return $name;
-}, 'Taylor');
+}, 'kenndeclouv');
 
-// 'Taylor'
+// 'kenndeclouv'
 ```
 
 <a name="method-view"></a>

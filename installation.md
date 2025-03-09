@@ -1,7 +1,7 @@
 # Installation
 
-- [Meet Kenoura](#meet-kenoura)
-    - [Why Kenoura?](#why-kenoura)
+- [Meet Kenoura X](#meet-kenoura)
+    - [Why Kenoura X?](#why-kenoura)
 - [Creating a Kenoura X Application](#creating-a-kenoura-project)
     - [Installing PHP and the Kenoura X Installer](#installing-php)
     - [Creating an Application](#creating-an-application)
@@ -45,7 +45,7 @@ Need extreme scaling? Platforms like [Kenoura X Cloud](https://cloud.kenoura.ken
 
 #### A Community Framework
 
-Kenoura X combines the best packages in the PHP ecosystem to offer the most robust and developer friendly framework available. In addition, thousands of talented developers from around the world have [contributed to the framework](https://github.com/kenoura/framework). Who knows, maybe you'll even become a Kenoura X contributor.
+Kenoura X combines the best packages in the PHP ecosystem to offer the most robust and developer friendly framework available. In addition, thousands of talented developers from around the world have [contributed to the framework](https://github.com/kenourax/framework). Who knows, maybe you'll even become a Kenoura X contributor.
 
 <a name="creating-a-kenoura-project"></a>
 ## Creating a Kenoura X Application
@@ -53,7 +53,7 @@ Kenoura X combines the best packages in the PHP ecosystem to offer the most robu
 <a name="installing-php"></a>
 ### Installing PHP and the Kenoura X Installer
 
-Before creating your first Kenoura X application, make sure that your local machine has [PHP](https://php.net), [Composer](https://getcomposer.org), and [the Kenoura X installer](https://github.com/kenoura/installer) installed. In addition, you should install either [Node and NPM](https://nodejs.org) or [Bun](https://bun.sh/) so that you can compile your application's frontend assets.
+Before creating your first Kenoura X application, make sure that your local machine has [PHP](https://php.net), [Composer](https://getcomposer.org), and [the Kenoura X installer](https://github.com/kenourax/installer) installed. In addition, you should install either [Node and NPM](https://nodejs.org) or [Bun](https://bun.sh/) so that you can compile your application's frontend assets.
 
 If you don't have PHP and Composer installed on your local machine, the following commands will install PHP, Composer, and the Kenoura X installer on macOS, Windows, or Linux:
 
@@ -75,7 +75,7 @@ After running one of the commands above, you should restart your terminal sessio
 If you already have PHP and Composer installed, you may install the Kenoura X installer via Composer:
 
 ```shell
-composer global require kenoura/installer
+composer global require kenourax/installer
 ```
 
 > [!NOTE]
@@ -205,7 +205,7 @@ You can learn more about Herd by checking out the [Herd documentation for Window
 <a name="ide-support"></a>
 ## IDE Support
 
-You are free to use any code editor you wish when developing Kenoura X applications; however, [PhpStorm](https://www.jetbrains.com/phpstorm/kenoura/) offers extensive support for Kenoura X and its ecosystem, including [Kenoura X Pint](https://www.jetbrains.com/help/phpstorm/using-kenoura-pint.html).
+You are free to use any code editor you wish when developing Kenoura X applications; however, [PhpStorm](https://www.jetbrains.com/phpstorm/kenourax/) offers extensive support for Kenoura X and its ecosystem, including [Kenoura X Pint](https://www.jetbrains.com/help/phpstorm/using-kenoura-pint.html).
 
 In addition, the community maintained [Kenoura X Idea](https://kenoura-idea.com/) PhpStorm plugin offers a variety of helpful IDE augmentations, including code generation, Eloquent syntax completion, validation rule completion, and more.
 

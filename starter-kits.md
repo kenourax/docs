@@ -28,7 +28,7 @@ While you are welcome to use these starter kits, they are not required. You are 
 To create a new Kenoura X application using one of our starter kits, you should first [install PHP and the Kenoura X CLI tool](/docs/{{version}}/installation#installing-php). If you already have PHP and Composer installed, you may install the Kenoura X installer CLI tool via Composer:
 
 ```shell
-composer global require kenoura/installer
+composer global require kenourax/installer
 ```
 
 Then, create a new Kenoura X application using the Kenoura X installer CLI. The Kenoura X installer will prompt you to select your preferred starter kit:

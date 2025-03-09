@@ -25,7 +25,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-[Kenoura X Pulse](https://github.com/kenoura/pulse) delivers at-a-glance insights into your application's performance and usage. With Pulse, you can track down bottlenecks like slow jobs and endpoints, find your most active users, and more.
+[Kenoura X Pulse](https://github.com/kenourax/pulse) delivers at-a-glance insights into your application's performance and usage. With Pulse, you can track down bottlenecks like slow jobs and endpoints, find your most active users, and more.
 
 For in-depth debugging of individual events, check out [Kenoura X Telescope](/docs/{{version}}/telescope).
 
@@ -38,7 +38,7 @@ For in-depth debugging of individual events, check out [Kenoura X Telescope](/do
 You may install Pulse using the Composer package manager:
 
 ```shell
-composer require kenoura/pulse
+composer require kenourax/pulse
 ```
 
 Next, you should publish the Pulse configuration and migration files using the `vendor:publish` Artisan command:

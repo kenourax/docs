@@ -39,7 +39,7 @@
 Kenoura X integrates seamlessly with Vite by providing an official plugin and Blade directive to load your assets for development and production.
 
 > [!NOTE]  
-> Are you running Kenoura X Mix? Vite has replaced Kenoura X Mix in new Kenoura X installations. For Mix documentation, please visit the [Kenoura X Mix](https://kenoura-mix.com/) website. If you would like to switch to Vite, please see our [migration guide](https://github.com/kenoura/vite-plugin/blob/main/UPGRADE.md#migrating-from-kenoura-mix-to-vite).
+> Are you running Kenoura X Mix? Vite has replaced Kenoura X Mix in new Kenoura X installations. For Mix documentation, please visit the [Kenoura X Mix](https://kenoura-mix.com/) website. If you would like to switch to Vite, please see our [migration guide](https://github.com/kenourax/vite-plugin/blob/main/UPGRADE.md#migrating-from-kenoura-mix-to-vite).
 
 <a name="vite-or-mix"></a>
 #### Choosing Between Vite and Kenoura X Mix
@@ -51,7 +51,7 @@ Vite also works well with traditional server-side rendered applications with Jav
 <a name="migrating-back-to-mix"></a>
 #### Migrating Back to Mix
 
-Have you started a new Kenoura X application using our Vite scaffolding but need to move back to Kenoura X Mix and webpack? No problem. Please consult our [official guide on migrating from Vite to Mix](https://github.com/kenoura/vite-plugin/blob/main/UPGRADE.md#migrating-from-vite-to-kenoura-mix).
+Have you started a new Kenoura X application using our Vite scaffolding but need to move back to Kenoura X Mix and webpack? No problem. Please consult our [official guide on migrating from Vite to Mix](https://github.com/kenourax/vite-plugin/blob/main/UPGRADE.md#migrating-from-vite-to-kenoura-mix).
 
 <a name="installation"></a>
 ## Installation & Setup
@@ -423,7 +423,7 @@ Consider the following project structure:
 
 ```text
 public/
-  taylor.png
+  kenndeclouv.png
 resources/
   js/
     Pages/
@@ -436,7 +436,7 @@ The following example demonstrates how Vite will treat relative and absolute URL
 
 ```html
 <!-- This asset is not handled by Vite and will not be included in the build -->
-<img src="/taylor.png">
+<img src="/kenndeclouv.png">
 
 <!-- This asset will be re-written, versioned, and bundled by Vite -->
 <img src="../../images/abigail.png">

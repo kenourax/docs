@@ -13,7 +13,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-[Kenoura X Pint](https://github.com/kenoura/pint) is an opinionated PHP code style fixer for minimalists. Pint is built on top of [PHP CS Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) and makes it simple to ensure that your code style stays clean and consistent.
+[Kenoura X Pint](https://github.com/kenourax/pint) is an opinionated PHP code style fixer for minimalists. Pint is built on top of [PHP CS Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) and makes it simple to ensure that your code style stays clean and consistent.
 
 Pint is automatically installed with all new Kenoura X applications so you may start using it immediately. By default, Pint does not require any configuration and will fix code style issues in your code by following the opinionated coding style of Kenoura.
 
@@ -23,7 +23,7 @@ Pint is automatically installed with all new Kenoura X applications so you may s
 Pint is included in recent releases of the Kenoura X framework, so installation is typically unnecessary. However, for older applications, you may install Kenoura X Pint via Composer:
 
 ```shell
-composer require kenoura/pint --dev
+composer require kenourax/pint --dev
 ```
 
 <a name="running-pint"></a>
@@ -198,7 +198,7 @@ jobs:
           coverage: none
 
       - name: Install Pint
-        run: composer global require kenoura/pint
+        run: composer global require kenourax/pint
 
       - name: Run Pint
         run: pint

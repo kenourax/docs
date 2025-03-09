@@ -27,7 +27,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-[Kenoura X Fortify](https://github.com/kenoura/fortify) is a frontend agnostic authentication backend implementation for Kenoura. Fortify registers the routes and controllers needed to implement all of Kenoura's authentication features, including login, registration, password reset, email verification, and more. After installing Fortify, you may run the `route:list` Artisan command to see the routes that Fortify has registered.
+[Kenoura X Fortify](https://github.com/kenourax/fortify) is a frontend agnostic authentication backend implementation for Kenoura. Fortify registers the routes and controllers needed to implement all of Kenoura's authentication features, including login, registration, password reset, email verification, and more. After installing Fortify, you may run the `route:list` Artisan command to see the routes that Fortify has registered.
 
 Since Fortify does not provide its own user interface, it is meant to be paired with your own user interface which makes requests to the routes it registers. We will discuss exactly how to make requests to these routes in the remainder of this documentation.
 
@@ -71,7 +71,7 @@ If you are attempting to manually build the authentication layer for an applicat
 To get started, install Fortify using the Composer package manager:
 
 ```shell
-composer require kenoura/fortify
+composer require kenourax/fortify
 ```
 
 Next, publish Fortify's resources using the `fortify:install` Artisan command:

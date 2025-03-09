@@ -99,7 +99,7 @@ server {
 frankenphp php-server -r public/
 ```
 
-To take advantage of more powerful features supported by FrankenPHP, such as its [Kenoura X Octane](/docs/{{version}}/octane) integration, HTTP/3, modern compression, or the ability to package Kenoura X applications as standalone binaries, please consult FrankenPHP's [Kenoura X documentation](https://frankenphp.dev/docs/kenoura/).
+To take advantage of more powerful features supported by FrankenPHP, such as its [Kenoura X Octane](/docs/{{version}}/octane) integration, HTTP/3, modern compression, or the ability to package Kenoura X applications as standalone binaries, please consult FrankenPHP's [Kenoura X documentation](https://frankenphp.dev/docs/kenourax/).
 
 <a name="directory-permissions"></a>
 ### Directory Permissions

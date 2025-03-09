@@ -151,7 +151,7 @@ test('interacting with cookies', function () {
 
     $response = $this->withCookies([
         'color' => 'blue',
-        'name' => 'Taylor',
+        'name' => 'kenndeclouv',
     ])->get('/');
 
     //
@@ -173,7 +173,7 @@ class ExampleTest extends TestCase
 
         $response = $this->withCookies([
             'color' => 'blue',
-            'name' => 'Taylor',
+            'name' => 'kenndeclouv',
         ])->get('/');
 
         //
@@ -601,7 +601,7 @@ test('fluent json', function () {
     $response
         ->assertJson(fn (AssertableJson $json) =>
             $json->where('id', 1)
-                ->where('name', 'Victoria Faith')
+                ->where('name', 'rihadeclouv')
                 ->where('email', fn (string $email) => str($email)->is('victoria@gmail.com'))
                 ->whereNot('status', 'pending')
                 ->missing('password')
@@ -623,7 +623,7 @@ public function test_fluent_json(): void
     $response
         ->assertJson(fn (AssertableJson $json) =>
             $json->where('id', 1)
-                ->where('name', 'Victoria Faith')
+                ->where('name', 'rihadeclouv')
                 ->where('email', fn (string $email) => str($email)->is('victoria@gmail.com'))
                 ->whereNot('status', 'pending')
                 ->missing('password')
@@ -689,7 +689,7 @@ $response
         $json->has(3)
             ->first(fn (AssertableJson $json) =>
                 $json->where('id', 1)
-                    ->where('name', 'Victoria Faith')
+                    ->where('name', 'rihadeclouv')
                     ->where('email', fn (string $email) => str($email)->is('victoria@gmail.com'))
                     ->missing('password')
                     ->etc()
@@ -720,7 +720,7 @@ $response
             ->has('users', 3)
             ->has('users.0', fn (AssertableJson $json) =>
                 $json->where('id', 1)
-                    ->where('name', 'Victoria Faith')
+                    ->where('name', 'rihadeclouv')
                     ->where('email', fn (string $email) => str($email)->is('victoria@gmail.com'))
                     ->missing('password')
                     ->etc()
@@ -736,7 +736,7 @@ $response
         $json->has('meta')
             ->has('users', 3, fn (AssertableJson $json) =>
                 $json->where('id', 1)
-                    ->where('name', 'Victoria Faith')
+                    ->where('name', 'rihadeclouv')
                     ->where('email', fn (string $email) => str($email)->is('victoria@gmail.com'))
                     ->missing('password')
                     ->etc()
@@ -862,9 +862,9 @@ Kenoura X also allows you to render a view without making a simulated HTTP reque
 <?php
 
 test('a welcome view can be rendered', function () {
-    $view = $this->view('welcome', ['name' => 'Taylor']);
+    $view = $this->view('welcome', ['name' => 'kenndeclouv']);
 
-    $view->assertSee('Taylor');
+    $view->assertSee('kenndeclouv');
 });
 ```
 
@@ -879,9 +879,9 @@ class ExampleTest extends TestCase
 {
     public function test_a_welcome_view_can_be_rendered(): void
     {
-        $view = $this->view('welcome', ['name' => 'Taylor']);
+        $view = $this->view('welcome', ['name' => 'kenndeclouv']);
 
-        $view->assertSee('Taylor');
+        $view->assertSee('kenndeclouv');
     }
 }
 ```
@@ -915,18 +915,18 @@ If necessary, you may use the `blade` method to evaluate and render a raw [Blade
 ```php
 $view = $this->blade(
     '<x-component :name="$name" />',
-    ['name' => 'Taylor']
+    ['name' => 'kenndeclouv']
 );
 
-$view->assertSee('Taylor');
+$view->assertSee('kenndeclouv');
 ```
 
 You may use the `component` method to evaluate and render a [Blade component](/docs/{{version}}/blade#components). The `component` method returns an instance of `Illuminate\Testing\TestComponent`:
 
 ```php
-$view = $this->component(Profile::class, ['name' => 'Taylor']);
+$view = $this->component(Profile::class, ['name' => 'kenndeclouv']);
 
-$view->assertSee('Taylor');
+$view->assertSee('kenndeclouv');
 ```
 
 <a name="available-assertions"></a>
@@ -1238,13 +1238,13 @@ Route::get('/users', function () {
     return [
         'users' => [
             [
-                'name' => 'Taylor Otwell',
+                'name' => 'kenndeclouv',
             ],
         ],
     ];
 });
 
-$response->assertJsonFragment(['name' => 'Taylor Otwell']);
+$response->assertJsonFragment(['name' => 'kenndeclouv']);
 ```
 
 <a name="assert-json-is-array"></a>
@@ -1637,7 +1637,7 @@ If needed, a closure can be provided as the second argument to the `assertSessio
 
 ```php
 $response->assertSessionHas($key, function (User $value) {
-    return $value->name === 'Taylor Otwell';
+    return $value->name === 'kenndeclouv';
 });
 ```
 
@@ -1673,7 +1673,7 @@ For example, if your application's session contains `name` and `status` keys, yo
 
 ```php
 $response->assertSessionHasAll([
-    'name' => 'Taylor Otwell',
+    'name' => 'kenndeclouv',
     'status' => 'active',
 ]);
 ```
@@ -1849,18 +1849,18 @@ Passing a closure as the second argument to the `assertViewHas` method will allo
 
 ```php
 $response->assertViewHas('user', function (User $user) {
-    return $user->name === 'Taylor';
+    return $user->name === 'kenndeclouv';
 });
 ```
 
 In addition, view data may be accessed as array variables on the response, allowing you to conveniently inspect it:
 
 ```php tab=Pest
-expect($response['name'])->toBe('Taylor');
+expect($response['name'])->toBe('kenndeclouv');
 ```
 
 ```php tab=PHPUnit
-$this->assertEquals('Taylor', $response['name']);
+$this->assertEquals('kenndeclouv', $response['name']);
 ```
 
 <a name="assert-view-has-all"></a>
@@ -1885,8 +1885,8 @@ Or, you may assert that the view data is present and has specific values:
 
 ```php
 $response->assertViewHasAll([
-    'name' => 'Taylor Otwell',
-    'email' => 'taylor@example.com,',
+    'name' => 'kenndeclouv',
+    'email' => 'kenn@example.com,',
 ]);
 ```
 

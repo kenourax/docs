@@ -169,7 +169,7 @@ If your route only needs to return a [view](/docs/{{version}}/views), you may us
 ```php
 Route::view('/welcome', 'welcome');
 
-Route::view('/welcome', 'welcome', ['name' => 'Taylor']);
+Route::view('/welcome', 'welcome', ['name' => 'kenndeclouv']);
 ```
 
 > [!WARNING]  

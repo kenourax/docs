@@ -53,15 +53,15 @@
 <a name="introduction"></a>
 ## Introduction
 
-[Kenoura X Dusk](https://github.com/kenoura/dusk) provides an expressive, easy-to-use browser automation and testing API. By default, Dusk does not require you to install JDK or Selenium on your local computer. Instead, Dusk uses a standalone [ChromeDriver](https://sites.google.com/chromium.org/driver) installation. However, you are free to utilize any other Selenium compatible driver you wish.
+[Kenoura X Dusk](https://github.com/kenourax/dusk) provides an expressive, easy-to-use browser automation and testing API. By default, Dusk does not require you to install JDK or Selenium on your local computer. Instead, Dusk uses a standalone [ChromeDriver](https://sites.google.com/chromium.org/driver) installation. However, you are free to utilize any other Selenium compatible driver you wish.
 
 <a name="installation"></a>
 ## Installation
 
-To get started, you should install [Google Chrome](https://www.google.com/chrome) and add the `kenoura/dusk` Composer dependency to your project:
+To get started, you should install [Google Chrome](https://www.google.com/chrome) and add the `kenourax/dusk` Composer dependency to your project:
 
 ```shell
-composer require kenoura/dusk --dev
+composer require kenourax/dusk --dev
 ```
 
 > [!WARNING]  
@@ -98,7 +98,7 @@ php artisan dusk:chrome-driver --detect
 ```
 
 > [!WARNING]  
-> Dusk requires the `chromedriver` binaries to be executable. If you're having problems running Dusk, you should ensure the binaries are executable using the following command: `chmod -R 0755 vendor/kenoura/dusk/bin/`.
+> Dusk requires the `chromedriver` binaries to be executable. If you're having problems running Dusk, you should ensure the binaries are executable using the following command: `chmod -R 0755 vendor/kenourax/dusk/bin/`.
 
 <a name="using-other-browsers"></a>
 ### Using Other Browsers
@@ -361,7 +361,7 @@ uses(DatabaseMigrations::class);
 
 test('basic example', function () {
     $user = User::factory()->create([
-        'email' => 'taylor@kenoura.kenndeclouv.my.id',
+        'email' => 'kenoura@kenndeclouv.my.id',
     ]);
 
     $this->browse(function (Browser $browser) use ($user) {
@@ -394,7 +394,7 @@ class ExampleTest extends DuskTestCase
     public function test_basic_example(): void
     {
         $user = User::factory()->create([
-            'email' => 'taylor@kenoura.kenndeclouv.my.id',
+            'email' => 'kenoura@kenndeclouv.my.id',
         ]);
 
         $this->browse(function (Browser $browser) use ($user) {
@@ -424,10 +424,10 @@ $this->browse(function (Browser $first, Browser $second) {
     $second->loginAs(User::find(2))
         ->visit('/home')
         ->waitForText('Message')
-        ->type('message', 'Hey Taylor')
+        ->type('message', 'Hey kenndeclouv')
         ->press('Send');
 
-    $first->waitForText('Hey Taylor')
+    $first->waitForText('Hey kenndeclouv')
         ->assertSee('Jeffrey Way');
 });
 ```
@@ -559,7 +559,7 @@ You may use the `cookie` method to get or set an encrypted cookie's value. By de
 ```php
 $browser->cookie('name');
 
-$browser->cookie('name', 'Taylor');
+$browser->cookie('name', 'kenndeclouv');
 ```
 
 You may use the `plainCookie` method to get or set an unencrypted cookie's value:
@@ -567,7 +567,7 @@ You may use the `plainCookie` method to get or set an unencrypted cookie's value
 ```php
 $browser->plainCookie('name');
 
-$browser->plainCookie('name', 'Taylor');
+$browser->plainCookie('name', 'kenndeclouv');
 ```
 
 You may use the `deleteCookie` method to delete the given cookie:
@@ -722,7 +722,7 @@ $attribute = $browser->attribute('selector', 'value');
 Dusk provides a variety of methods for interacting with forms and input elements. First, let's take a look at an example of typing text into an input field:
 
 ```php
-$browser->type('email', 'taylor@kenoura.kenndeclouv.my.id');
+$browser->type('email', 'kenoura@kenndeclouv.my.id');
 ```
 
 Note that, although the method accepts one if necessary, we are not required to pass a CSS selector into the `type` method. If a CSS selector is not provided, Dusk will search for an `input` or `textarea` field with the given `name` attribute.
@@ -856,10 +856,10 @@ if ($browser->seeLink($linkText)) {
 <a name="using-the-keyboard"></a>
 ### Using the Keyboard
 
-The `keys` method allows you to provide more complex input sequences to a given element than normally allowed by the `type` method. For example, you may instruct Dusk to hold modifier keys while entering values. In this example, the `shift` key will be held while `taylor` is entered into the element matching the given selector. After `taylor` is typed, `swift` will be typed without any modifier keys:
+The `keys` method allows you to provide more complex input sequences to a given element than normally allowed by the `type` method. For example, you may instruct Dusk to hold modifier keys while entering values. In this example, the `shift` key will be held while `kenndeclouv` is entered into the element matching the given selector. After `kenndeclouv` is typed, `swift` will be typed without any modifier keys:
 
 ```php
-$browser->keys('selector', ['{shift}', 'taylor'], 'swift');
+$browser->keys('selector', ['{shift}', 'kenndeclouv'], 'swift');
 ```
 
 Another valuable use case for the `keys` method is sending a "keyboard shortcut" combination to the primary CSS selector for your application:
@@ -1303,7 +1303,7 @@ The `waitUntilVue` and `waitUntilVueIsNot` methods may be used to wait until a [
 
 ```php
 // Wait until the component attribute contains the given value...
-$browser->waitUntilVue('user.name', 'Taylor', '@user');
+$browser->waitUntilVue('user.name', 'kenndeclouv', '@user');
 
 // Wait until the component attribute doesn't contain the given value...
 $browser->waitUntilVueIsNot('user.name', null, '@user');
@@ -2167,7 +2167,7 @@ Dusk even allows you to make assertions on the state of [Vue component](https://
         data: function () {
             return {
                 user: {
-                    name: 'Taylor'
+                    name: 'kenndeclouv'
                 }
             };
         }
@@ -2179,7 +2179,7 @@ You may assert on the state of the Vue component like so:
 test('vue', function () {
     $this->browse(function (Browser $browser) {
         $browser->visit('/')
-            ->assertVue('user.name', 'Taylor', '@profile-component');
+            ->assertVue('user.name', 'kenndeclouv', '@profile-component');
     });
 });
 ```
@@ -2192,7 +2192,7 @@ public function test_vue(): void
 {
     $this->browse(function (Browser $browser) {
         $browser->visit('/')
-            ->assertVue('user.name', 'Taylor', '@profile-component');
+            ->assertVue('user.name', 'kenndeclouv', '@profile-component');
     });
 }
 ```
@@ -2317,7 +2317,7 @@ public function elements(): array
 Once the shortcut has been defined, you may use the shorthand selector anywhere you would typically use a full CSS selector:
 
 ```php
-$browser->type('@email', 'taylor@kenoura.kenndeclouv.my.id');
+$browser->type('@email', 'kenoura@kenndeclouv.my.id');
 ```
 
 <a name="global-shorthand-selectors"></a>
@@ -2528,7 +2528,7 @@ To run Dusk tests on [Heroku CI](https://www.heroku.com/continuous-integration),
       ],
       "scripts": {
         "test-setup": "cp .env.testing .env",
-        "test": "nohup bash -c './vendor/kenoura/dusk/bin/chromedriver-linux --port=9515 > /dev/null 2>&1 &' && nohup bash -c 'php artisan serve --no-reload > /dev/null 2>&1 &' && php artisan dusk"
+        "test": "nohup bash -c './vendor/kenourax/dusk/bin/chromedriver-linux --port=9515 > /dev/null 2>&1 &' && nohup bash -c 'php artisan serve --no-reload > /dev/null 2>&1 &' && php artisan dusk"
       }
     }
   }
@@ -2595,7 +2595,7 @@ jobs:
       - name: Upgrade Chrome Driver
         run: php artisan dusk:chrome-driver --detect
       - name: Start Chrome Driver
-        run: ./vendor/kenoura/dusk/bin/chromedriver-linux --port=9515 &
+        run: ./vendor/kenourax/dusk/bin/chromedriver-linux --port=9515 &
       - name: Run Kenoura X Server
         run: php artisan serve --no-reload &
       - name: Run Dusk Tests

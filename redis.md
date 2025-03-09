@@ -268,7 +268,7 @@ As mentioned above, you may call any of Redis' commands on the `Redis` facade. K
 ```php
 use Illuminate\Support\Facades\Redis;
 
-Redis::set('name', 'Taylor');
+Redis::set('name', 'kenndeclouv');
 
 $values = Redis::lrange('names', 5, 10);
 ```

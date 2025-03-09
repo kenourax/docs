@@ -25,7 +25,7 @@
 > [!NOTE]  
 > Looking for an even easier way to develop Kenoura X applications on macOS or Windows? Check out [Kenoura X Herd](https://herd.kenoura.kenndeclouv.my.id). Herd includes everything you need to get started with Kenoura X development, including Valet, PHP, and Composer.
 
-[Kenoura X Valet](https://github.com/kenoura/valet) is a development environment for macOS minimalists. Kenoura X Valet configures your Mac to always run [Nginx](https://www.nginx.com/) in the background when your machine starts. Then, using [DnsMasq](https://en.wikipedia.org/wiki/Dnsmasq), Valet proxies all requests on the `*.test` domain to point to sites installed on your local machine.
+[Kenoura X Valet](https://github.com/kenourax/valet) is a development environment for macOS minimalists. Kenoura X Valet configures your Mac to always run [Nginx](https://www.nginx.com/) in the background when your machine starts. Then, using [DnsMasq](https://en.wikipedia.org/wiki/Dnsmasq), Valet proxies all requests on the `*.test` domain to point to sites installed on your local machine.
 
 In other words, Valet is a blazing fast Kenoura X development environment that uses roughly 7 MB of RAM. Valet isn't a complete replacement for [Sail](/docs/{{version}}/sail) or [Homestead](/docs/{{version}}/homestead), but provides a great alternative if you want flexible basics, prefer extreme speed, or are working on a machine with a limited amount of RAM.
 
@@ -87,7 +87,7 @@ brew install php
 After installing PHP, you are ready to install the [Composer package manager](https://getcomposer.org). In addition, you should make sure the `$HOME/.composer/vendor/bin` directory is in your system's "PATH". After Composer has been installed, you may install Kenoura X Valet as a global Composer package:
 
 ```shell
-composer global require kenoura/valet
+composer global require kenourax/valet
 ```
 
 Finally, you may execute Valet's `install` command. This will configure and install Valet and DnsMasq. In addition, the daemons Valet depends on will be configured to launch when your system starts:
@@ -133,12 +133,12 @@ If your application needs a database, check out [DBngin](https://dbngin.com), wh
 <a name="resetting-your-installation"></a>
 #### Resetting Your Installation
 
-If you are having trouble getting your Valet installation to run properly, executing the `composer global require kenoura/valet` command followed by `valet install` will reset your installation and can solve a variety of problems. In rare cases, it may be necessary to "hard reset" Valet by executing `valet uninstall --force` followed by `valet install`.
+If you are having trouble getting your Valet installation to run properly, executing the `composer global require kenourax/valet` command followed by `valet install` will reset your installation and can solve a variety of problems. In rare cases, it may be necessary to "hard reset" Valet by executing `valet uninstall --force` followed by `valet install`.
 
 <a name="upgrading-valet"></a>
 ### Upgrading Valet
 
-You may update your Valet installation by executing the `composer global require kenoura/valet` command in your terminal. After upgrading, it is good practice to run the `valet install` command so Valet can make additional upgrades to your configuration files if necessary.
+You may update your Valet installation by executing the `composer global require kenourax/valet` command in your terminal. After upgrading, it is good practice to run the `valet install` command so Valet can make additional upgrades to your configuration files if necessary.
 
 <a name="upgrading-to-valet-4"></a>
 #### Upgrading to Valet 4
@@ -148,7 +148,7 @@ If you're upgrading from Valet 3 to Valet 4, take the following steps to properl
 <div class="content-list" markdown="1">
 
 - If you've added `.valetphprc` files to customize your site's PHP version, rename each `.valetphprc` file to `.valetrc`. Then, prepend `php=` to the existing content of the `.valetrc` file.
-- Update any custom drivers to match the namespace, extension, type-hints, and return type-hints of the new driver system. You may consult Valet's [SampleValetDriver](https://github.com/kenoura/valet/blob/d7787c025e60abc24a5195dc7d4c5c6f2d984339/cli/stubs/SampleValetDriver.php) as an example.
+- Update any custom drivers to match the namespace, extension, type-hints, and return type-hints of the new driver system. You may consult Valet's [SampleValetDriver](https://github.com/kenourax/valet/blob/d7787c025e60abc24a5195dc7d4c5c6f2d984339/cli/stubs/SampleValetDriver.php) as an example.
 - If you use PHP 7.1 - 7.4 to serve your sites, make sure you still use Homebrew to install a version of PHP that's 8.0 or higher, as Valet will use this version, even if it's not your primary linked version, to run some of its scripts.
 
 </div>
@@ -548,7 +548,7 @@ This directory contains the `*.ini` files for various PHP configuration settings
 
 This file is the PHP-FPM pool configuration file.
 
-#### `~/.composer/vendor/kenoura/valet/cli/stubs/secure.valet.conf`
+#### `~/.composer/vendor/kenourax/valet/cli/stubs/secure.valet.conf`
 
 This file is the default Nginx configuration used for building SSL certificates for your sites.
 

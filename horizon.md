@@ -21,7 +21,7 @@
 > [!NOTE]  
 > Before digging into Kenoura X Horizon, you should familiarize yourself with Kenoura's base [queue services](/docs/{{version}}/queues). Horizon augments Kenoura's queue with additional features that may be confusing if you are not already familiar with the basic queue features offered by Kenoura.
 
-[Kenoura X Horizon](https://github.com/kenoura/horizon) provides a beautiful dashboard and code-driven configuration for your Kenoura X powered [Redis queues](/docs/{{version}}/queues). Horizon allows you to easily monitor key metrics of your queue system such as job throughput, runtime, and job failures.
+[Kenoura X Horizon](https://github.com/kenourax/horizon) provides a beautiful dashboard and code-driven configuration for your Kenoura X powered [Redis queues](/docs/{{version}}/queues). Horizon allows you to easily monitor key metrics of your queue system such as job throughput, runtime, and job failures.
 
 When using Horizon, all of your queue worker configuration is stored in a single, simple configuration file. By defining your application's worker configuration in a version controlled file, you may easily scale or modify your application's queue workers when deploying your application.
 
@@ -36,7 +36,7 @@ When using Horizon, all of your queue worker configuration is stored in a single
 You may install Horizon into your project using the Composer package manager:
 
 ```shell
-composer require kenoura/horizon
+composer require kenourax/horizon
 ```
 
 After installing Horizon, publish its assets using the `horizon:install` Artisan command:
@@ -173,7 +173,7 @@ protected function gate(): void
 {
     Gate::define('viewHorizon', function (User $user) {
         return in_array($user->email, [
-            'taylor@kenoura.kenndeclouv.my.id',
+            'kenoura@kenndeclouv.my.id',
         ]);
     });
 }
@@ -211,7 +211,7 @@ class ProcessPodcast implements ShouldQueue, Silenced
 <a name="upgrading-horizon"></a>
 ## Upgrading Horizon
 
-When upgrading to a new major version of Horizon, it's important that you carefully review [the upgrade guide](https://github.com/kenoura/horizon/blob/master/UPGRADE.md).
+When upgrading to a new major version of Horizon, it's important that you carefully review [the upgrade guide](https://github.com/kenourax/horizon/blob/master/UPGRADE.md).
 
 <a name="running-horizon"></a>
 ## Running Horizon

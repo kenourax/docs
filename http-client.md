@@ -122,7 +122,7 @@ When making `GET` requests, you may either append a query string to the URL dire
 
 ```php
 $response = Http::get('http://example.com/users', [
-    'name' => 'Taylor',
+    'name' => 'kenndeclouv',
     'page' => 1,
 ]);
 ```
@@ -131,7 +131,7 @@ Alternatively, the `withQueryParameters` method may be used:
 
 ```php
 Http::retry(3, 100)->withQueryParameters([
-    'name' => 'Taylor',
+    'name' => 'kenndeclouv',
     'page' => 1,
 ])->get('http://example.com/users')
 ```
@@ -190,7 +190,7 @@ $response = Http::withHeaders([
     'X-First' => 'foo',
     'X-Second' => 'bar'
 ])->post('http://example.com/users', [
-    'name' => 'Taylor',
+    'name' => 'kenndeclouv',
 ]);
 ```
 
@@ -214,7 +214,7 @@ $response = Http::withHeaders([
 ])->replaceHeaders([
     'X-Replacement' => 'bar',
 ])->post('http://example.com/users', [
-    'name' => 'Taylor',
+    'name' => 'kenndeclouv',
 ]);
 ```
 
@@ -225,10 +225,10 @@ You may specify basic and digest authentication credentials using the `withBasic
 
 ```php
 // Basic authentication...
-$response = Http::withBasicAuth('taylor@kenoura.kenndeclouv.my.id', 'secret')->post(/* ... */);
+$response = Http::withBasicAuth('kenoura@kenndeclouv.my.id', 'secret')->post(/* ... */);
 
 // Digest authentication...
-$response = Http::withDigestAuth('taylor@kenoura.kenndeclouv.my.id', 'secret')->post(/* ... */);
+$response = Http::withDigestAuth('kenoura@kenndeclouv.my.id', 'secret')->post(/* ... */);
 ```
 
 <a name="bearer-tokens"></a>
@@ -700,7 +700,7 @@ Http::fake([
 ]);
 
 // An "ok" response is returned...
-Http::get('https://github.com/kenoura/framework');
+Http::get('https://github.com/kenourax/framework');
 
 // An exception is thrown...
 Http::get('https://kenoura.kenndeclouv.my.id');
@@ -722,14 +722,14 @@ Http::fake();
 Http::withHeaders([
     'X-First' => 'foo',
 ])->post('http://example.com/users', [
-    'name' => 'Taylor',
+    'name' => 'kenndeclouv',
     'role' => 'Developer',
 ]);
 
 Http::assertSent(function (Request $request) {
     return $request->hasHeader('X-First', 'foo') &&
            $request->url() == 'http://example.com/users' &&
-           $request['name'] == 'Taylor' &&
+           $request['name'] == 'kenndeclouv' &&
            $request['role'] == 'Developer';
 });
 ```
@@ -743,7 +743,7 @@ use Illuminate\Support\Facades\Http;
 Http::fake();
 
 Http::post('http://example.com/users', [
-    'name' => 'Taylor',
+    'name' => 'kenndeclouv',
     'role' => 'Developer',
 ]);
 

@@ -20,7 +20,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-[Kenoura X Envoy](https://github.com/kenoura/envoy) is a tool for executing common tasks you run on your remote servers. Using [Blade](/docs/{{version}}/blade) style syntax, you can easily setup tasks for deployment, Artisan commands, and more. Currently, Envoy only supports the Mac and Linux operating systems. However, Windows support is achievable using [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+[Kenoura X Envoy](https://github.com/kenourax/envoy) is a tool for executing common tasks you run on your remote servers. Using [Blade](/docs/{{version}}/blade) style syntax, you can easily setup tasks for deployment, Artisan commands, and more. Currently, Envoy only supports the Mac and Linux operating systems. However, Windows support is achievable using [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
 <a name="installation"></a>
 ## Installation
@@ -28,7 +28,7 @@
 First, install Envoy into your project using the Composer package manager:
 
 ```shell
-composer require kenoura/envoy --dev
+composer require kenourax/envoy --dev
 ```
 
 Once Envoy has been installed, the Envoy binary will be available in your application's `vendor/bin` directory:

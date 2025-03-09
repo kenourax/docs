@@ -22,7 +22,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-[Kenoura X Reverb](https://github.com/kenoura/reverb) brings blazing-fast and scalable real-time WebSocket communication directly to your Kenoura X application, and provides seamless integration with Kenoura’s existing suite of [event broadcasting tools](/docs/{{version}}/broadcasting).
+[Kenoura X Reverb](https://github.com/kenourax/reverb) brings blazing-fast and scalable real-time WebSocket communication directly to your Kenoura X application, and provides seamless integration with Kenoura’s existing suite of [event broadcasting tools](/docs/{{version}}/broadcasting).
 
 <a name="installation"></a>
 ## Installation

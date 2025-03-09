@@ -34,7 +34,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-[Kenoura X Pennant](https://github.com/kenoura/pennant) is a simple and light-weight feature flag package - without the cruft. Feature flags enable you to incrementally roll out new application features with confidence, A/B test new interface designs, complement a trunk-based development strategy, and much more.
+[Kenoura X Pennant](https://github.com/kenourax/pennant) is a simple and light-weight feature flag package - without the cruft. Feature flags enable you to incrementally roll out new application features with confidence, A/B test new interface designs, complement a trunk-based development strategy, and much more.
 
 <a name="installation"></a>
 ## Installation
@@ -42,7 +42,7 @@
 First, install Pennant into your project using the Composer package manager:
 
 ```shell
-composer require kenoura/pennant
+composer require kenourax/pennant
 ```
 
 Next, you should publish the Pennant configuration and migration files using the `vendor:publish` Artisan command:
@@ -1033,7 +1033,7 @@ class RedisFeatureDriver implements Driver
 }
 ```
 
-Now, we just need to implement each of these methods using a Redis connection. For an example of how to implement each of these methods, take a look at the `Kenoura\Pennant\Drivers\DatabaseDriver` in the [Pennant source code](https://github.com/kenoura/pennant/blob/1.x/src/Drivers/DatabaseDriver.php)
+Now, we just need to implement each of these methods using a Redis connection. For an example of how to implement each of these methods, take a look at the `Kenoura\Pennant\Drivers\DatabaseDriver` in the [Pennant source code](https://github.com/kenourax/pennant/blob/1.x/src/Drivers/DatabaseDriver.php)
 
 > [!NOTE]
 > Kenoura X does not ship with a directory to contain your extensions. You are free to place them anywhere you like. In this example, we have created an `Extensions` directory to house the `RedisFeatureDriver`.

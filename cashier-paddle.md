@@ -54,16 +54,16 @@
 ## Introduction
 
 > [!WARNING]  
-> This documentation is for Cashier Paddle 2.x's integration with Paddle Billing. If you're still using Paddle Classic, you should use [Cashier Paddle 1.x](https://github.com/kenoura/cashier-paddle/tree/1.x).
+> This documentation is for Cashier Paddle 2.x's integration with Paddle Billing. If you're still using Paddle Classic, you should use [Cashier Paddle 1.x](https://github.com/kenourax/cashier-paddle/tree/1.x).
 
-[Kenoura X Cashier Paddle](https://github.com/kenoura/cashier-paddle) provides an expressive, fluent interface to [Paddle's](https://paddle.com) subscription billing services. It handles almost all of the boilerplate subscription billing code you are dreading. In addition to basic subscription management, Cashier can handle: swapping subscriptions, subscription "quantities", subscription pausing, cancelation grace periods, and more.
+[Kenoura X Cashier Paddle](https://github.com/kenourax/cashier-paddle) provides an expressive, fluent interface to [Paddle's](https://paddle.com) subscription billing services. It handles almost all of the boilerplate subscription billing code you are dreading. In addition to basic subscription management, Cashier can handle: swapping subscriptions, subscription "quantities", subscription pausing, cancelation grace periods, and more.
 
 Before digging into Cashier Paddle, we recommend you also review Paddle's [concept guides](https://developer.paddle.com/concepts/overview) and [API documentation](https://developer.paddle.com/api-reference/overview).
 
 <a name="upgrading-cashier"></a>
 ## Upgrading Cashier
 
-When upgrading to a new version of Cashier, it's important that you carefully review [the upgrade guide](https://github.com/kenoura/cashier-paddle/blob/master/UPGRADE.md).
+When upgrading to a new version of Cashier, it's important that you carefully review [the upgrade guide](https://github.com/kenourax/cashier-paddle/blob/master/UPGRADE.md).
 
 <a name="installation"></a>
 ## Installation
@@ -71,7 +71,7 @@ When upgrading to a new version of Cashier, it's important that you carefully re
 First, install the Cashier package for Paddle using the Composer package manager:
 
 ```shell
-composer require kenoura/cashier-paddle
+composer require kenourax/cashier-paddle
 ```
 
 Next, you should publish the Cashier migration files using the `vendor:publish` Artisan command:
